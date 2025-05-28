@@ -26,6 +26,7 @@
 #  deleted_at                   :datetime
 #  edited_at                    :datetime
 #  trendable                    :boolean
+#  local_only                   :boolean
 #  ordered_media_attachment_ids :bigint(8)        is an Array
 #
 
@@ -125,8 +126,11 @@ class Status < ApplicationRecord
   scope :tagged_with_none, lambda { |tag_ids|
     where('NOT EXISTS (SELECT * FROM statuses_tags forbidden WHERE forbidden.status_id = statuses.id AND forbidden.tag_id IN (?))', tag_ids)
   }
-  scope :distributable_visibility, -> { where(visibility: %i(public unlisted)) }
+  scope :distributable_visibility, -> { where(visibility: %i(public unlisted), local_only: false) }
   scope :list_eligible_visibility, -> { where(visibility: %i(public unlisted private)) }
+
+# TODO: is this even used?
+  scope :without_local_only, -> {where(local_only: [false,nil])}
 
   after_create_commit :trigger_create_webhooks
   after_update_commit :trigger_update_webhooks
@@ -145,6 +149,7 @@ class Status < ApplicationRecord
 
   around_create Mastodon::Snowflake::Callbacks
 
+  before_create :set_locality
   after_create :set_poll_id
 
   # The `prepend: true` option below ensures this runs before
@@ -195,6 +200,10 @@ class Status < ApplicationRecord
 
   def local?
     attributes['local'] || uri.nil?
+  end
+
+  def local_only?
+    local_only
   end
 
   def in_reply_to_local_account?
@@ -441,6 +450,10 @@ class Status < ApplicationRecord
 
   def set_local
     self.local = account.local?
+  end
+
+  def set_locality
+    self.local_only = reblog.local_only if reblog?
   end
 
   def update_statistics

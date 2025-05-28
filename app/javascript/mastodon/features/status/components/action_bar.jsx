@@ -38,6 +38,7 @@ const messages = defineMessages({
   reblog_private: { id: 'status.reblog_private', defaultMessage: 'Boost with original visibility' },
   cancel_reblog_private: { id: 'status.cancel_reblog_private', defaultMessage: 'Unboost' },
   cannot_reblog: { id: 'status.cannot_reblog', defaultMessage: 'This post cannot be boosted' },
+  local_only: { id: 'status.local_only', defaultMessage: 'This post is only visible to other users of your instance' },
   favourite: { id: 'status.favourite', defaultMessage: 'Favorite' },
   bookmark: { id: 'status.bookmark', defaultMessage: 'Bookmark' },
   more: { id: 'status.more', defaultMessage: 'More' },
@@ -197,6 +198,7 @@ class ActionBar extends PureComponent {
     const publicStatus       = ['public', 'unlisted'].includes(status.get('visibility'));
     const pinnableStatus     = ['public', 'unlisted', 'private'].includes(status.get('visibility'));
     const mutingConversation = status.get('muted');
+    const federated          = !status.get('local_only');
     const account            = status.get('account');
     const writtenByMe        = status.getIn(['account', 'id']) === me;
     const isRemote           = status.getIn(['account', 'username']) !== status.getIn(['account', 'acct']);
@@ -209,7 +211,7 @@ class ActionBar extends PureComponent {
 
     menu.push({ text: intl.formatMessage(messages.copy), action: this.handleCopy });
 
-    if (publicStatus && 'share' in navigator) {
+    if (publicStatus && 'share' in navigator && federated) {
       menu.push({ text: intl.formatMessage(messages.share), action: this.handleShare });
     }
 
@@ -310,6 +312,7 @@ class ActionBar extends PureComponent {
         <div className='detailed-status__button'><IconButton className={classNames({ reblogPrivate })} disabled={!publicStatus && !reblogPrivate} active={status.get('reblogged')} title={reblogTitle} icon='retweet' iconComponent={reblogIconComponent} onClick={this.handleReblogClick} /></div>
         <div className='detailed-status__button'><IconButton className='star-icon' animate active={status.get('favourited')} title={intl.formatMessage(messages.favourite)} icon='star' iconComponent={status.get('favourited') ? StarIcon : StarBorderIcon} onClick={this.handleFavouriteClick} /></div>
         <div className='detailed-status__button'><IconButton className='bookmark-icon' disabled={!signedIn} active={status.get('bookmarked')} title={intl.formatMessage(messages.bookmark)} icon='bookmark' iconComponent={status.get('bookmarked') ? BookmarkIcon : BookmarkBorderIcon} onClick={this.handleBookmarkClick} /></div>
+        <div className='detailed-status__button'><IconButton className='federation-icon' disabled title={intl.formatMessage(messages.local_only)} icon='home' /></div>
 
         <div className='detailed-status__action-bar-dropdown'>
           <DropdownMenuContainer icon='ellipsis-h' iconComponent={MoreHorizIcon} status={status} items={menu} direction='left' title={intl.formatMessage(messages.more)} />

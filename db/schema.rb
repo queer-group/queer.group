@@ -129,6 +129,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_07_071624) do
     t.integer "min_reblogs"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "keep_local", default: true, null: false
     t.index ["account_id"], name: "index_account_statuses_cleanup_policies_on_account_id"
   end
 

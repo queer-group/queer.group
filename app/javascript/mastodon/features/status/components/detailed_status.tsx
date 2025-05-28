@@ -12,6 +12,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
+import HomeIcon from '@/material-icons/400-24px/home.svg?react';
 import { AnimatedNumber } from 'mastodon/components/animated_number';
 import { ContentWarning } from 'mastodon/components/content_warning';
 import EditedTimestamp from 'mastodon/components/edited_timestamp';
@@ -125,6 +126,7 @@ export const DetailedStatus: React.FC<{
   let media;
   let applicationLink;
   let reblogLink;
+  let localOnly;
   let attachmentAspectRatio;
 
   if (properStatus.get('media_attachments').getIn([0, 'type']) === 'video') {
@@ -277,6 +279,24 @@ export const DetailedStatus: React.FC<{
     );
   }
 
+  if (status.get('local_only')) {
+    localOnly = (
+      <>
+        <div className='status__prepend-icon-wrapper'>
+          <Icon
+            id='federation'
+            icon={HomeIcon}
+            className='status__prepend-icon'
+          />
+        </div>
+        <FormattedMessage
+          id='messages.local_only'
+          defaultMessage='Private mention'
+        />
+      </>
+    );
+  }
+
   const favouriteLink = (
     <Link
       to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/favourites`}
@@ -368,6 +388,7 @@ export const DetailedStatus: React.FC<{
 
             {media}
             {hashtagBar}
+            {localOnly}
           </>
         )}
 

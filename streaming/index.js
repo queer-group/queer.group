@@ -656,6 +656,12 @@ const startServer = async () => {
         return;
       }
 
+      // Hometown: Do not stream updates of local-only posts to unauthenticated users.
+      if ( payload.local_only && !req.accountId){
+        log.debug(`Message ${payload.id} filtered, because it's local-only`);
+        return;
+      }
+
       // When the account is not logged in, it is not necessary to confirm the block or mute
       if (!req.accountId) {
         transmit(event, payload);

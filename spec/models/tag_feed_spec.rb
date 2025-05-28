@@ -66,5 +66,11 @@ RSpec.describe TagFeed do
       results = described_class.new(tag_cats, nil).get(20)
       expect(results).to include(status)
     end
+
+    it 'excludes local-only posts when specified' do
+      status_tagged_with_cats.update(local_only: true)
+      results = described_class.new(tag_cats, nil, any: [tag_dogs.name], without_local_only: true).get(20)
+      expect(results).to_not include status_tagged_with_cats
+    end
   end
 end

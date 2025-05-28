@@ -39,3 +39,7 @@
         ·
         = material_symbol('visibility_off')
         = t('stream_entries.sensitive_content')
+      - if status.proper.local_only?
+        ·
+        = material_symbol('home')
+        = t('stream_entries.local_only')

@@ -9,7 +9,7 @@ class ActivityPub::NoteSerializer < ActivityPub::Serializer
              :in_reply_to, :published, :url,
              :attributed_to, :to, :cc, :sensitive,
              :atom_uri, :in_reply_to_atom_uri,
-             :conversation
+             :conversation, :local_only
 
   attribute :content
   attribute :content_map, if: :language?
@@ -87,6 +87,7 @@ class ActivityPub::NoteSerializer < ActivityPub::Serializer
   end
 
   delegate :edited?, to: :object
+  delegate :local_only, to: :object
 
   def in_reply_to
     return unless object.reply? && !object.thread.nil?

@@ -40,7 +40,8 @@ class StatusesController < ApplicationController
   end
 
   def embed
-    return not_found if @status.hidden? || @status.reblog?
+    # Hometown: Do not allow embedding of local-only posts. 
+    return not_found if @status.hidden? || @status.reblog? || @status.local_only?
 
     expires_in 180, public: true
     response.headers.delete('X-Frame-Options')
