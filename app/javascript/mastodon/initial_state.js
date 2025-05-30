@@ -61,6 +61,7 @@
  * @property {boolean=} critical_updates_pending
  * @property {InitialStateMeta} meta
  * @property {Role?} role
+ * @property {number} max_toot_chars
  */
 
 const element = document.getElementById('initial-state');
@@ -86,6 +87,7 @@ export const activityApiEnabled = getMeta('activity_api_enabled');
 export const autoPlayGif = getMeta('auto_play_gif');
 export const boostModal = getMeta('boost_modal');
 export const deleteModal = getMeta('delete_modal');
+export const maxChars = (initialState && initialState.max_toot_chars)||500;
 export const disableSwiping = getMeta('disable_swiping');
 export const disableHoverCards = getMeta('disable_hover_cards');
 export const disabledAccountId = getMeta('disabled_account_id');
