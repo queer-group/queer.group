@@ -7,8 +7,6 @@
 # the extended buildx capabilities used in this file.
 # Make sure multiarch TARGETPLATFORM is available for interpolation
 # See: https://docs.docker.com/build/building/multi-platform/
-ARG TARGETPLATFORM=${TARGETPLATFORM}
-ARG BUILDPLATFORM=${BUILDPLATFORM}
 
 # Ruby image to use for base image, change with [--build-arg RUBY_VERSION="3.3.x"]
 # renovate: datasource=docker depName=docker.io/ruby
