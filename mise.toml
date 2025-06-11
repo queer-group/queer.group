@@ -1,0 +1,18 @@
+[settings]
+idiomatic_version_file_enable_tools = ["ruby"]
+
+[tools]
+# "gem:rubocop" = "latest"
+"gem:ruby-lsp" = "latest"
+just = "latest"
+node = "24"
+"npm:typescript-language-server" = "latest"
+yarn = "4"
+
+[env]
+# Load required environment variables
+RAILS_ENV = "development"
+_.file = ".env.development"
+
+# Add ./bin to the PATH
+_.path = './bin'
