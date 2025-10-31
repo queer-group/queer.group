@@ -795,9 +795,9 @@ de:
         view_dashboard: Dashboard
         view_dashboard_description: Dashboard und verschiedene Metriken
         view_devops: DevOps
-        view_devops_description: Auf Sidekiq- und pgHero-Dashboards zugreifen
-        view_feeds: Live-Feeds und Hashtags
-        view_feeds_description: Zugriff auf Live-Feeds und Hashtags – unabhängig der Servereinstellungen
+        view_devops_description: Erlaubt es Benutzer*innen, auf die Sidekiq- und pgHero-Dashboards zuzugreifen
+        view_feeds: Live-Feeds und Hashtags anzeigen
+        view_feeds_description: Ermöglicht Nutzer*innen unabhängig von den Servereinstellungen den Zugriff auf die Live-Feeds und Hashtags
       title: Rollen
     rules:
       add_new: Regel hinzufügen
@@ -1199,7 +1199,7 @@ de:
     advanced_settings: Erweiterte Einstellungen
     animations_and_accessibility: Animationen und Barrierefreiheit
     boosting_preferences: Teilen
-    boosting_preferences_info_html: "<strong>Tipp:</strong> <kbd>Umschalttaste</kbd> + <kbd>Klick</kbd> beim Teilen-Symbol %{icon} wird den Beitrag immer sofort teilen."
+    boosting_preferences_info_html: "<strong>Tipp:</strong> <kbd>Shift</kbd> + <kbd>Klick</kbd> beim %{icon} Teilen-Symbol wird den Beitrag immer sofort teilen."
     discovery: Entdecken
     localization:
       body: Mastodon wird von Freiwilligen übersetzt.
