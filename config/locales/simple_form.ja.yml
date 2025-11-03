@@ -242,7 +242,10 @@ ja:
         setting_emoji_style: 絵文字スタイル
         setting_expand_spoilers: 閲覧注意としてマークされた投稿を常に展開する
         setting_hide_network: 繋がりを隠す
+<<<<<<< HEAD
         setting_missing_alt_text_modal: 代替テキストなしでメディアを投稿する前に警告する
+=======
+>>>>>>> 61c0daffc9 (New Crowdin Translations (automated) (#36676))
         setting_quick_boosting: クイックブーストの有効化
         setting_reduce_motion: アニメーションの動きを減らす
         setting_system_font_ui: システムのデフォルトフォントを使う
