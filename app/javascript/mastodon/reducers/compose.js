@@ -345,13 +345,23 @@ export const composeReducer = (state = initialState, action) => {
     const isDirect = state.get('privacy') === 'direct';
     return state
       .set('quoted_status_id', isDirect ? null : status.get('id'))
-      .update('spoiler', spoiler => (spoiler) || !!status.get('spoiler_text'))
-      .update('spoiler_text', (spoiler_text) => spoiler_text || status.get('spoiler_text'))
+      .set('spoiler', status.get('sensitive'))
+      .set('spoiler_text', status.get('spoiler_text'))
       .update('privacy', (visibility) => {
         if (['public', 'unlisted'].includes(visibility) && status.get('visibility') === 'private') {
           return 'private';
         }
         return visibility;
+      })
+      .update('text', (text) => {
+        if (!isDirect) {
+          return text;
+        }
+        const url = status.get('url');
+        if (text.includes(url)) {
+          return text;
+        }
+        return text.trim() ? `${text}\n\n${url}` : url;
       });
   } else if (quoteComposeCancel.match(action)) {
     return state.set('quoted_status_id', null);
