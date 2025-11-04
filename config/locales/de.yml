@@ -1929,7 +1929,7 @@ de:
     errors:
       in_reply_not_found: Der Beitrag, auf den du antworten möchtest, scheint nicht zu existieren.
       quoted_status_not_found: Der Beitrag, den du zitieren möchtest, scheint nicht zu existieren.
-      quoted_user_not_mentioned: Nur ein erwähntes Profil kann in einer privaten Erwähnung zitiert werden.
+      quoted_user_not_mentioned: Ein nicht erwähnter Nutzer kann in einem privaten Erwähnungsbeitrag nicht zitiert werden.
     over_character_limit: Begrenzung von %{max} Zeichen überschritten
     pin_errors:
       direct: Beiträge mit privaten Erwähnungen können nicht angeheftet werden
