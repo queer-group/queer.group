@@ -248,7 +248,7 @@
   "confirmations.missing_alt_text.message": "Η ανάρτησή σου περιέχει πολυμέσα χωρίς εναλλακτικό κείμενο. Η προσθήκη περιγραφών βοηθά να γίνει το περιεχόμενό σου προσβάσιμο σε περισσότερους ανθρώπους.",
   "confirmations.missing_alt_text.secondary": "Δημοσίευση όπως και να ΄χει",
   "confirmations.missing_alt_text.title": "Προσθήκη εναλλακτικού κειμένου;",
-  "confirmations.mute.confirm": "Σίγαση",
+  "confirmations.mute.confirm": "Αποσιώπηση",
   "confirmations.private_quote_notify.cancel": "Πίσω στην επεξεργασία",
   "confirmations.private_quote_notify.confirm": "Δημοσίευση ανάρτησης",
   "confirmations.private_quote_notify.do_not_show_again": "Να μην εμφανιστεί ξανά αυτό το μήνυμα",
