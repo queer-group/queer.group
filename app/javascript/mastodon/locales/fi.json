@@ -770,7 +770,7 @@
   "privacy_policy.last_updated": "Päivitetty viimeksi {date}",
   "privacy_policy.title": "Tietosuojakäytäntö",
   "quote_error.edit": "Lainauksia ei voi lisätä julkaisua muokattaessa.",
-  "quote_error.poll": "Lainaaminen äänestyksen ohessa ei ole sallittua.",
+  "quote_error.poll": "Äänestysten lainaaminen ei ole sallittua.",
   "quote_error.private_mentions": "Lainaaminen ei ole sallittua yksityismaininnoissa.",
   "quote_error.quote": "Vain yksi lainaus kerrallaan on sallittu.",
   "quote_error.unauthorized": "Sinulla ei ole valtuuksia lainata tätä julkaisua.",

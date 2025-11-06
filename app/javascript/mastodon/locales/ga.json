@@ -1020,7 +1020,7 @@
   "video.volume_up": "Toirt suas",
   "visibility_modal.button_title": "Socraigh infheictheacht",
   "visibility_modal.direct_quote_warning.text": "Má shábhálann tú na socruithe reatha, déanfar an luachan leabaithe a thiontú ina nasc.",
-  "visibility_modal.direct_quote_warning.title": "Ní féidir sleachta a leabú i dtráchtanna príobháideacha",
+  "visibility_modal.direct_quote_warning.title": "Ní féidir luachana a leabú i luanna príobháideacha",
   "visibility_modal.header": "Infheictheacht agus idirghníomhaíocht",
   "visibility_modal.helper.direct_quoting": "Ní féidir le daoine eile tráchtanna príobháideacha a scríobhadh ar Mastodon a lua.",
   "visibility_modal.helper.privacy_editing": "Ní féidir infheictheacht a athrú tar éis post a fhoilsiú.",

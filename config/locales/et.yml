@@ -1672,7 +1672,6 @@ et:
       disabled_account: Pärast seda ei ole konto täielik kasutamine võimalik. Säilib andmete eksportimise ja konto taasaktiveerimise võimalus.
       followers: See käsklus kolib kõik siinse konto jälgijad üle sinu uue konto jälgijateks
       only_redirect_html: Teine võimalus on <a href="%{path}">märkida konto ümbersuunatuks</a>.
-      other_data: Muid kontoandmeid, sh postitusi automaatselt üle ei kanta
       redirect: Konto eemaldatakse avalikust kataloogist ja märgitakse profiilis ümbersuunatuks
   moderation:
     title: Modereerimine

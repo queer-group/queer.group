@@ -1672,7 +1672,7 @@ es:
       disabled_account: Tu cuenta actual no será completamente utilizable después. Sin embargo, tendrás acceso a la exportación de datos así como a la reactivación.
       followers: Esta acción migrará a todos los seguidores de la cuenta actual a la nueva cuenta
       only_redirect_html: Alternativamente, solo puedes <a href="%{path}">poner una redirección en tu perfil</a>.
-      other_data: No se moverán otros datos automáticamente
+      other_data: Ningún otro dato se moverá automáticamente (esto incluye tus publicaciones y la lista de cuentas que sigues)
       redirect: El perfil de tu cuenta actual se actualizará con un aviso de redirección y será excluido de las búsquedas
   moderation:
     title: Moderación

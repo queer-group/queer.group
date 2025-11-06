@@ -252,8 +252,6 @@
   "confirmations.private_quote_notify.cancel": "편집으로 돌아가기",
   "confirmations.private_quote_notify.confirm": "게시",
   "confirmations.private_quote_notify.do_not_show_again": "이 메시지를 다시 표시하지 않음",
-  "confirmations.private_quote_notify.message": "인용하려는 사용자 및 멘션된 다른 사람들에게 알림이 전송되며 상대방이 나를 팔로우하지 않더라도 해당 게시물을 볼 수 있습니다.",
-  "confirmations.private_quote_notify.title": "팔로워 및 언급된 사용자에게 공유하시겠습니까?",
   "confirmations.quiet_post_quote_info.dismiss": "다시 보지 않기",
   "confirmations.quiet_post_quote_info.got_it": "알겠습니다",
   "confirmations.quiet_post_quote_info.message": "조용한 공개 게시물을 인용하면 해당 게시물은 트렌드 타임라인에 노출되지 않습니다.",
