@@ -1075,19 +1075,6 @@ eu:
       trending: Joerak
     username_blocks:
       add_new: Gehitu berria
-      block_registrations: Blokeatu izen-emateak
-      comparison:
-        equals: Berdin
-      delete: Ezabatu
-      edit:
-        title: Editatu erabiltzaile-izena araua
-      matches_exactly_html: 'Berdin: %{string}'
-      new:
-        create: Sortu araua
-        title: Sortu erabiltzaile-izen araua berria
-      no_username_block_selected: Ez da erabiltzaile-izen araurik aldatu, ez delako bat ere hautatu
-      not_permitted: Baimendu gabea
-      title: Erabiltzaile-izen arauak
     warning_presets:
       add_new: Gehitu berria
       delete: Ezabatu
