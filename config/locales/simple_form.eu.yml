@@ -363,9 +363,7 @@ eu:
         jurisdiction: Jurisdikzio legala
         min_age: Gutxieneko adina
       user:
-        date_of_birth_1i: Eguna
         date_of_birth_2i: Hilabetea
-        date_of_birth_3i: Urtea
         role: Rola
         time_zone: Ordu zona
       user_role:
