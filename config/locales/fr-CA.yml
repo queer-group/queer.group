@@ -820,7 +820,6 @@ fr-CA:
         rules_hint: Il y a un espace dédié pour les règles auxquelles vos utilisateurs sont invités à adhérer.
         title: À propos
       allow_referrer_origin:
-        desc: Quand les utilisateurs cliquent sur un lien externe, leur navigateur peut envoyer l'adresse du serveur Mastodon en tant qu'adresse d'origine. À désactiver si cela permet d'identifier les utilisateurs, par exemple s'il s'agit d'un serveur Mastodon personnel.
         title: Autoriser les sites externes à voir votre serveur Mastodon comme une source de trafic
       appearance:
         preamble: Personnaliser l'interface web de Mastodon.
