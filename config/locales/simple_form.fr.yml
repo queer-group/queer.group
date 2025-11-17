@@ -365,6 +365,7 @@ fr:
         min_age: Âge minimum
       user:
         date_of_birth_2i: Mois
+        date_of_birth_3i: Jour
         role: Rôle
         time_zone: Fuseau horaire
       user_role:

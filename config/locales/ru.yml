@@ -29,9 +29,9 @@ ru:
   admin:
     account_actions:
       action: Выполнить действие
-      already_silenced: Эта учётная запись уже ограничена.
-      already_suspended: Эта учётная запись уже заблокирована.
-      title: Произвести модерацию учётной записи %{acct}
+      already_silenced: Эта учетная запись уже ограничена.
+      already_suspended: Эта учетная запись уже заблокирована.
+      title: Осуществить модерацию в отношении учётной записи %{acct}
     account_moderation_notes:
       create: Создать заметку
       created_msg: Заметка для модераторов добавлена
@@ -63,9 +63,9 @@ ru:
       delete: Удалить данные
       deleted: Удалена
       demote: Разжаловать
-      destroyed_msg: Данные %{username} будут удалены в ближайшее время
+      destroyed_msg: Данные %{username} поставлены в очередь на удаление
       disable: Отключить
-      disable_sign_in_token_auth: Отключить аутентификацию с помощью одноразового пароля по эл. почте
+      disable_sign_in_token_auth: Отключить аутентификацию по e-mail кодам
       disable_two_factor_authentication: Отключить 2FA
       disabled: Отключена
       display_name: Отображаемое имя
@@ -92,9 +92,9 @@ ru:
         title: По расположению
       login_status: Состояние учётной записи
       media_attachments: Медиавложения
-      memorialize: Почтить память
-      memorialized: Мемориальная
-      memorialized_msg: Учётная запись %{username} превращена в мемориальную
+      memorialize: Сделать мемориалом
+      memorialized: In memoriam
+      memorialized_msg: "%{username} успешно превращён в памятник"
       moderation:
         active: Действующие
         all: Все
@@ -109,7 +109,7 @@ ru:
       no_account_selected: Ничего не изменилось, так как ни одна учётная запись не была выделена
       no_limits_imposed: Ограничения отсутствуют
       no_role_assigned: Роль не присвоена
-      not_subscribed: Подписка отсутствует
+      not_subscribed: Не подписаны
       pending: Ожидает одобрения
       perform_full_suspension: Заблокировать
       previous_strikes: Зафиксированные нарушения
@@ -118,7 +118,7 @@ ru:
         many: За этой учётной записью числится <strong>%{count}</strong> нарушений.
         one: За этой учётной записью числится <strong>%{count}</strong> нарушение.
         other: За этой учётной записью числится <strong>%{count}</strong> нарушений.
-      promote: Сделать администратором
+      promote: Повысить
       protocol: Протокол
       public: Профиль
       push_subscription_expires: Подписка PuSH истекает
@@ -169,7 +169,7 @@ ru:
       undo_sensitized: Не скрывать медиа
       undo_silenced: Не ограничивать
       undo_suspension: Разблокировать
-      unsilenced_msg: Отменено ограничение учётной записи %{username}
+      unsilenced_msg: Ограничения с учётной записи %{username} сняты успешно
       unsubscribe: Отписаться
       unsuspended_msg: Учётная запись %{username} разблокирована
       username: Имя пользователя
@@ -342,7 +342,7 @@ ru:
       unpublish: Скрыть
       unpublished_msg: Объявление скрыто
       updated_msg: Объявление отредактировано
-    critical_update_pending: Доступно критическое обновление
+    critical_update_pending: Ожидается обновление критического уровня
     custom_emojis:
       assign_category: Задать категорию
       by_domain: Домен
@@ -479,13 +479,13 @@ ru:
           mx: Запись MX
       domain: Домен
       new:
-        create: Заблокировать домен
-        resolve: Проверить DNS-записи
-        title: Заблокировать домен электронной почты
-      no_email_domain_block_selected: Ничего не изменилось, так как ни один почтовый домен не был выделен
-      not_permitted: Недостаточно прав
-      resolved_dns_records_hint_html: Доменное имя указывает на следующие MX-домены, которые в конечном итоге отвечают за приём электронной почты. Блокировка MX-домена приведёт к блокировке регистраций со всех адресов электронной почты, которые используют тот же MX-домен, даже если видимое доменное имя отличается от него. <strong>Будьте осторожны, чтобы не заблокировать основных провайдеров электронной почты</strong>
-      resolved_through_html: Из DNS-записей домена %{domain}
+        create: Создать блокировку
+        resolve: Проверить домен
+        title: Блокировка нового почтового домена
+      no_email_domain_block_selected: Блокировки почтовых доменов не были изменены, так как ни один из них не был выбран
+      not_permitted: Не разрешено
+      resolved_dns_records_hint_html: Доменное имя указывает на следующие MX-домены, которые в конечном итоге отвечают за прием электронной почты. Блокировка MX-домена будет блокировать регистрации с любого адреса электронной почты, который использует тот же MX-домен, даже если видимое доменное имя отличается от него. <strong>Будьте осторожны, чтобы не заблокировать основных провайдеров электронной почты</strong>
+      resolved_through_html: Разрешено через %{domain}
       title: Блокировки по домену эл. почты
     export_domain_allows:
       new:
