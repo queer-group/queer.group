@@ -71,7 +71,7 @@ export const HandledLink: FC<HandledLinkProps & ComponentProps<'a'>> = ({
   return (
     <a
       {...props}
-      href={encodeURI(href)}
+      href={href}
       title={href}
       className={classNames('unhandled-link', className)}
       target='_blank'
