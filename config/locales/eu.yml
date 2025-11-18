@@ -579,8 +579,6 @@ eu:
         create: Gehitu Moderazio Oharra
         created_msg: Instantziako moderazio oharra ongi sortu da!
         description_html: Ikusi eta idatzi oharrak beste moderatzaileentzat eta zuretzat etorkizunerako
-        destroyed_msg: Instantziako moderazio oharra ongi ezabatu da!
-        placeholder: Instantzia honi buruzko informazioa, burututako ekintzak edo etorkizunean instantzia hau moderatzen lagunduko dizun beste edozein gauza.
         title: Moderazio oharrak
       private_comment: Iruzkin pribatua
       public_comment: Iruzkin publikoa
@@ -837,8 +835,6 @@ eu:
         users: Saioa hasita duten erabiltzaile lokalei
       feed_access:
         modes:
-          authenticated: Saioa hasi duten erabiltzaileentzat soilik
-          disabled: Erabiltzaile-rol jakin bat behar da
           public: Edonork
       landing_page:
         values:
