@@ -1099,7 +1099,7 @@ de:
         trendable: In Trends erlaubt
         trending_rank: Platz %{rank}
         usable: In Beiträgen erlaubt
-        usage_comparison: Heute %{today} × und gestern %{yesterday} × verwendet
+        usage_comparison: Heute %{today}-mal und gestern %{yesterday}-mal verwendet
         used_by_over_week:
           one: In den vergangenen 7 Tagen von einem Profil verwendet
           other: In den vergangenen 7 Tagen von %{count} Profilen verwendet
