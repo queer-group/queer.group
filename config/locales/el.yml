@@ -1306,7 +1306,7 @@ el:
   author_attribution:
     example_title: Δείγμα κειμένου
     hint_html: Γράφεις ειδήσεις ή άρθρα blog εκτός του Mastodon; Έλεγξε πώς μπορείς να πάρεις τα εύσημα όταν κοινοποιούνται στο Mastodon.
-    instructions: 'Βεβαιώσου ότι ο κώδικας αυτός είναι στην HTML του άρθρου σου:'
+    instructions: 'Βεβαιώσου ότι ο κώδικας αυτός είναι στο HTML του άρθρου σου:'
     more_from_html: Περισσότερα από %{name}
     s_blog: Ιστολόγιο του/της %{name}
     then_instructions: Στη συνέχεια, πρόσθεσε το όνομα τομέα της δημοσίευσης στο παρακάτω πεδίο.
@@ -1880,7 +1880,7 @@ el:
     development: Ανάπτυξη
     edit_profile: Επεξεργασία προφίλ
     export: Εξαγωγή
-    featured_tags: Αναδεδειγμένες ετικέτες
+    featured_tags: Προβεβλημένες ετικέτες
     import: Εισαγωγή
     import_and_export: Εισαγωγή και εξαγωγή
     migrate: Μετακόμιση λογαριασμού
