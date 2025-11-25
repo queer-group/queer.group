@@ -56,7 +56,7 @@ en-GB:
         scopes: Which APIs the application will be allowed to access. If you select a top-level scope, you don't need to select individual ones.
         setting_advanced_layout: Display Mastodon as a multi-column layout, allowing you to view the timeline, notifications, and a third column of your choosing. Not recommended for smaller screens.
         setting_aggregate_reblogs: Do not show new boosts for posts that have been recently boosted (only affects newly-received boosts)
-        setting_always_send_emails: Normally email notifications won't be sent when you are actively using Mastodon
+        setting_always_send_emails: Normally e-mail notifications won't be sent when you are actively using Mastodon
         setting_boost_modal: When enabled, boosting will first open a confirmation dialogue in which you can change the visibility of your boost.
         setting_default_quote_policy_private: Followers-only posts authored on Mastodon can't be quoted by others.
         setting_default_quote_policy_unlisted: When people quote you, their post will also be hidden from trending timelines.
@@ -79,6 +79,7 @@ en-GB:
       featured_tag:
         name: 'Here are some of the hashtags you used the most recently:'
       filters:
+        action: Choose which action to perform when a post matches the filter
         actions:
           blur: Hide media behind a warning, without hiding the text itself
           hide: Completely hide the filtered content, behaving as if it did not exist
@@ -87,6 +88,7 @@ en-GB:
         activity_api_enabled: Counts of locally published posts, active users, and new registrations in weekly buckets
         app_icon: WEBP, PNG, GIF or JPG. Overrides the default app icon on mobile devices with a custom icon.
         backups_retention_period: Users have the ability to generate archives of their posts to download later. When set to a positive value, these archives will be automatically deleted from your storage after the specified number of days.
+        bootstrap_timeline_accounts: These accounts will be pinned to the top of new users' follow recommendations. Provide a comma-separated list of accounts.
         closed_registrations_message: Displayed when sign-ups are closed
         content_cache_retention_period: All posts from other servers (including boosts and replies) will be deleted after the specified number of days, without regard to any local user interaction with those posts. This includes posts where a local user has marked it as bookmarks or favourites. Private mentions between users from different instances will also be lost and impossible to restore. Use of this setting is intended for special purpose instances and breaks many user expectations when implemented for general purpose use.
         custom_css: You can apply custom styles on the web version of Mastodon.
@@ -293,7 +295,7 @@ en-GB:
         min_age: Minimum age requirement
         peers_api_enabled: Publish list of discovered servers in the API
         profile_directory: Enable profile directory
-        registrations_mode: Who can sign up
+        registrations_mode: Who can sign-up
         remote_live_feed_access: Access to live feeds featuring remote posts
         remote_topic_feed_access: Access to hashtag and link feeds featuring remote posts
         require_invite_text: Require a reason to join
@@ -370,7 +372,9 @@ en-GB:
         jurisdiction: Legal jurisdiction
         min_age: Minimum age
       user:
+        date_of_birth_1i: Year
         date_of_birth_2i: Month
+        date_of_birth_3i: Day
         role: Role
         time_zone: Time Zone
       user_role:
