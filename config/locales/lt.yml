@@ -130,7 +130,7 @@ lt:
       remote_suspension_reversible_hint_html: Paskyra jų serveryje buvo pristabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko nuotolinis serveris gali atkurti šią paskyrą be jokių neigiamų pasekmių. Jei nori iš karto pašalinti visus paskyros duomenis, gali tai padaryti toliau.
       remove_avatar: Pašalinti avatarą
       remove_header: Pašalinti antraštę
-      removed_avatar_msg: Sėkmingai pašalintas %{username} avataro vaizdas.
+      removed_avatar_msg: Sėkmingai pašalintas %{username} avataro vaizdas
       removed_header_msg: Sėkmingai pašalintas %{username} antraštės paveikslėlis
       resend_confirmation:
         already_confirmed: Šis naudotojas jau patvirtintas.

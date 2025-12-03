@@ -91,10 +91,10 @@ de:
         bootstrap_timeline_accounts: Diese Konten werden an den Anfang der Follow-Empfehlungen für neue Nutzer angeheftet. Gib eine durch Kommata getrennte Liste von Konten an.
         closed_registrations_message: Wird angezeigt, wenn Registrierungen deaktiviert sind
         content_cache_retention_period: Sämtliche Beiträge von anderen Servern (einschließlich geteilte Beiträge und Antworten) werden, unabhängig von der Interaktion der lokalen Nutzer*innen mit diesen Beiträgen, nach der festgelegten Anzahl von Tagen gelöscht. Das betrifft auch Beiträge, die von lokalen Nutzer*innen favorisiert oder als Lesezeichen gespeichert wurden. Private Erwähnungen zwischen Nutzer*innen von verschiedenen Servern werden ebenfalls verloren gehen und können nicht wiederhergestellt werden. Diese Option richtet sich ausschließlich an Server mit speziellen Zwecken und wird die allgemeine Nutzungserfahrung beeinträchtigen, wenn sie für den allgemeinen Gebrauch aktiviert ist.
-        custom_css: Du kannst benutzerdefinierte Stile auf die Web-Version von Mastodon anwenden.
+        custom_css: Du kannst eigene Stylesheets für das Webinterface von Mastodon verwenden.
         favicon: WEBP, PNG, GIF oder JPG. Überschreibt das Standard-Mastodon-Favicon mit einem eigenen Symbol.
         landing_page: Legt fest, welche Seite neue Besucher*innen sehen, wenn sie zum ersten Mal auf deinem Server ankommen. Für „Trends“ müssen die Trends in den Entdecken-Einstellungen aktiviert sein. Für „Lokaler Feed“ muss „Zugriff auf Live-Feeds, die lokale Beiträge beinhalten“ in den Entdecken-Einstellungen auf „Alle“ gesetzt werden.
-        mascot: Überschreibt die Abbildung in der erweiterten Weboberfläche.
+        mascot: Überschreibt die Abbildung im erweiterten Webinterface.
         media_cache_retention_period: Mediendateien aus Beiträgen von externen Nutzer*innen werden auf deinem Server zwischengespeichert. Wenn ein positiver Wert gesetzt ist, werden die Medien nach der festgelegten Anzahl von Tagen gelöscht. Sollten die Medien nach dem Löschvorgang wieder angefragt werden, werden sie erneut heruntergeladen, sofern der ursprüngliche Inhalt noch vorhanden ist. Es wird empfohlen, diesen Wert auf mindestens 14 Tage festzulegen, da die Häufigkeit der Abfrage von Linkvorschaukarten für Websites von Dritten begrenzt ist und die Linkvorschaukarten sonst nicht vor Ablauf dieser Zeit aktualisiert werden.
         min_age: Nutzer*innen werden bei der Registrierung aufgefordert, ihr Geburtsdatum zu bestätigen
         peers_api_enabled: Eine Liste von Domains, die diesem Server im Fediverse begegnet sind. Hierbei werden keine Angaben darüber gemacht, ob du mit einem bestimmten Server föderierst, sondern nur, dass dein Server davon weiß. Dies wird von Diensten verwendet, die allgemein Statistiken übers Ferdiverse sammeln.
@@ -161,8 +161,8 @@ de:
         color: Farbe, die für diese Rolle im Webinterface verwendet wird, als RGB im Hexadezimalsystem
         highlighted: Moderative/administrative Rolle im öffentlichen Profil anzeigen
         name: Name der Rolle, der auch öffentlich als Badge angezeigt wird, sofern dies unten aktiviert ist
-        permissions_as_keys: Konten mit dieser Rolle haben eine Berechtigung für …
-        position: Eine höherrangige Rolle entscheidet in bestimmten Situationen über Konfliktlösungen. Einige Aktionen können jedoch nur mit untergeordneten Rollen durchgeführt werden
+        permissions_as_keys: Nutzer*innen mit dieser Rolle haben Zugriff auf …
+        position: Höhere Rollen entscheiden über Konfliktlösungen zu gewissen Situationen. Bestimmte Aktionen können nur mit geringfügigeren Rollen durchgeführt werden
       username_block:
         allow_with_approval: Anstatt Registrierungen komplett zu verhindern, benötigen übereinstimmende Treffer eine Genehmigung
         comparison: Bitte beachte das Scunthorpe-Problem, wenn teilweise übereinstimmende Treffer gesperrt werden

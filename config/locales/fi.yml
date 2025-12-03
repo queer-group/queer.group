@@ -79,7 +79,7 @@ fi:
       inbox_url: Postilaatikon URL-⁠osoite
       invite_request_text: Syitä liittymiseen
       invited_by: Kutsuja
-      ip: IP-osoite
+      ip: IP-⁠osoite
       joined: Liittynyt
       location:
         all: Kaikki
@@ -1555,7 +1555,7 @@ fi:
       finished: Valmis
       in_progress: Käynnissä
       scheduled: Ajastettu
-      unconfirmed: Vahvistamaton
+      unconfirmed: Varmistamaton
     status: Tila
     success: Tietojen lähettäminen onnistui, ja ne käsitellään aivan pian
     time_started: Aloitettu
@@ -1706,16 +1706,22 @@ fi:
       body: "%{name} mainitsi sinut:"
       subject: "%{name} mainitsi sinut"
       title: Uusi maininta
+    moderation_warning:
+      subject: Olet saanut moderointivaroituksen
     poll:
       subject: Äänestys käyttäjältä %{name} on päättynyt
     quote:
       body: "%{name} lainasi julkaisuasi:"
       subject: "%{name} lainasi julkaisuasi"
       title: Uusi lainaus
+    quoted_update:
+      subject: "%{name} muokkasi lainaamaasi julkaisua"
     reblog:
       body: "%{name} tehosti julkaisuasi:"
       subject: "%{name} tehosti julkaisuasi"
       title: Uusi tehostus
+    severed_relationships:
+      subject: Olet menettänyt yhteyksiä moderointipäätöksen vuoksi
     status:
       subject: "%{name} julkaisi juuri"
     update:
