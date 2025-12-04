@@ -135,6 +135,7 @@
   "annual_report.summary.new_posts.new_posts": "nye indlæg",
   "annual_report.summary.percentile.text": "<topLabel>Dermed er du i top</topLabel><percentage></percentage><bottomLabel>af {domain}-brugere.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Vi fortæller det ikke til nogen.",
+  "annual_report.summary.share_message": "Min arketype er {archetype}!",
   "annual_report.summary.thanks": "Tak for at være en del af Mastodon!",
   "attachments_list.unprocessed": "(ubehandlet)",
   "audio.hide": "Skjul lyd",
