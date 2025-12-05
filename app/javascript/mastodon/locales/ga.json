@@ -135,6 +135,7 @@
   "annual_report.summary.new_posts.new_posts": "postanna nua",
   "annual_report.summary.percentile.text": "<topLabel>Cuireann sé sin i mbarr</topLabel><percentage></percentage><bottomLabel> úsáideoirí {domain}.</bottomLabel> thú",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Ní inseoidh muid do Bernie.",
+  "annual_report.summary.share_message": "Fuair ​​mé an t-archetíopa {archetype}!",
   "annual_report.summary.thanks": "Go raibh maith agat as a bheith mar chuid de Mastodon!",
   "attachments_list.unprocessed": "(neamhphróiseáilte)",
   "audio.hide": "Cuir fuaim i bhfolach",
