@@ -135,6 +135,7 @@
   "annual_report.summary.new_posts.new_posts": "فرستهٔ جدید",
   "annual_report.summary.percentile.text": "<topLabel>بین کاربران {domain} جزو</topLabel><percentage></percentage><bottomLabel>برتر هستید.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "به برنی خبر نمی‌دهیم.",
+  "annual_report.summary.share_message": "من کهن‌الگوی {archetype} را گرفتم!",
   "annual_report.summary.thanks": "سپاس که بخشی از ماستودون هستید!",
   "attachments_list.unprocessed": "(پردازش نشده)",
   "audio.hide": "نهفتن صدا",

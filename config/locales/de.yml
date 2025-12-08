@@ -1055,7 +1055,7 @@ de:
           other: In den vergangenen 7 Tagen von %{count} Profilen geteilt
         title: Angesagte Links
         usage_comparison: Heute %{today} × und gestern %{yesterday} × geteilt
-      not_allowed_to_trend: Trend nicht erlaubt
+      not_allowed_to_trend: Darf nicht trenden
       only_allowed: Nur Genehmigte
       pending_review: Überprüfung ausstehend
       preview_card_providers:
@@ -1099,7 +1099,7 @@ de:
         trendable: In Trends erlaubt
         trending_rank: Platz %{rank}
         usable: In Beiträgen erlaubt
-        usage_comparison: Heute %{today}-mal und gestern %{yesterday}-mal verwendet
+        usage_comparison: Heute %{today} × und gestern %{yesterday} × verwendet
         used_by_over_week:
           one: In den vergangenen 7 Tagen von einem Profil verwendet
           other: In den vergangenen 7 Tagen von %{count} Profilen verwendet

@@ -79,7 +79,7 @@ fi:
       inbox_url: Postilaatikon URL-⁠osoite
       invite_request_text: Syitä liittymiseen
       invited_by: Kutsuja
-      ip: IP-⁠osoite
+      ip: IP-osoite
       joined: Liittynyt
       location:
         all: Kaikki

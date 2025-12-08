@@ -1256,7 +1256,7 @@ lt:
     pin_errors:
       limit: Jūs jau prisegėte maksimalų toot'ų skaičų
       ownership: Kitų vartotojų toot'ai negali būti prisegti
-      reblog: Pakeltos žinutės negali būti prisegtos
+      reblog: Žinutės, kuriomis pasidalinta, negali būti papildomai prisegtos
     quote_error:
       not_available: Įrašas nepasiekiamas
       pending_approval: Įrašas peržiūrimas
