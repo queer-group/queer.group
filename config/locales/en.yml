@@ -58,6 +58,8 @@ en:
     user_count_before: Home to
     what_is_mastodon: What is Hometown/Mastodon?
   accounts:
+    errors:
+      cannot_be_added_to_collections: This account cannot be added to collections.
     followers:
       one: Follower
       other: Followers
