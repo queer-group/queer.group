@@ -4,7 +4,12 @@ import {
   EMOJI_TYPE_UNICODE,
   EMOJI_TYPE_CUSTOM,
 } from './constants';
-import { loadEmojiByHexcode, LocaleNotLoadedError } from './database';
+import {
+  loadCustomEmojiByShortcode,
+  loadEmojiByHexcode,
+  loadLegacyShortcodesByShortcode,
+  LocaleNotLoadedError,
+} from './database';
 import { importEmojiData } from './loader';
 import { emojiToUnicodeHex } from './normalize';
 import type {
@@ -119,14 +124,30 @@ export async function loadEmojiDataToState(
 
   // First, try to load the data from IndexedDB.
   try {
+    const legacyCode = await loadLegacyShortcodesByShortcode(state.code);
     // This is duplicative, but that's because TS can't distinguish the state type easily.
-    const data = await loadEmojiByHexcode(state.code, locale);
-    if (data) {
-      return {
-        ...state,
-        type: EMOJI_TYPE_UNICODE,
-        data,
-      };
+    if (state.type === EMOJI_TYPE_UNICODE || legacyCode) {
+      const data = await loadEmojiByHexcode(
+        legacyCode?.hexcode ?? state.code,
+        locale,
+      );
+      if (data) {
+        return {
+          ...state,
+          type: EMOJI_TYPE_UNICODE,
+          data,
+          // TODO: Use CLDR shortcodes when the picker supports them.
+          shortcode: legacyCode?.shortcodes.at(0),
+        };
+      }
+    } else {
+      const data = await loadCustomEmojiByShortcode(state.code);
+      if (data) {
+        return {
+          ...state,
+          data,
+        };
+      }
     }
 
     // If not found, assume it's not an emoji and return null.

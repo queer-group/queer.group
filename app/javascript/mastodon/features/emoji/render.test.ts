@@ -7,7 +7,7 @@ import {
   stringToEmojiState,
   tokenizeText,
 } from './render';
-import type { EmojiStateCustom } from './types';
+import type { EmojiStateCustom, EmojiStateUnicode } from './types';
 
 describe('tokenizeText', () => {
   test('returns an array of text to be a single token', () => {
@@ -116,18 +116,38 @@ describe('loadEmojiDataToState', () => {
     const dbCall = vi
       .spyOn(db, 'loadEmojiByHexcode')
       .mockResolvedValue(unicodeEmojiFactory());
-    const unicodeState = { type: 'unicode', code: '1F60A' } as const;
+    const dbLegacyCall = vi
+      .spyOn(db, 'loadLegacyShortcodesByShortcode')
+      .mockResolvedValueOnce({
+        shortcodes: ['legacy_code'],
+        hexcode: '1F60A',
+      });
+    const unicodeState = {
+      type: 'unicode',
+      code: '1F60A',
+    } as const satisfies EmojiStateUnicode;
     const result = await loadEmojiDataToState(unicodeState, 'en');
     expect(dbCall).toHaveBeenCalledWith('1F60A', 'en');
+    expect(dbLegacyCall).toHaveBeenCalledWith('1F60A');
     expect(result).toEqual({
       type: 'unicode',
       code: '1F60A',
       data: unicodeEmojiFactory(),
+      shortcode: 'legacy_code',
     });
   });
 
-  test('returns null for custom emoji without data', async () => {
+  test('loads custom emoji data into state', async () => {
+    const dbCall = vi
+      .spyOn(db, 'loadCustomEmojiByShortcode')
+      .mockResolvedValueOnce(customEmojiFactory());
     const customState = {
+      type: 'custom',
+      code: 'smile',
+    } as const satisfies EmojiStateCustom;
+    const result = await loadEmojiDataToState(customState, 'en');
+    expect(dbCall).toHaveBeenCalledWith('smile');
+    expect(result).toEqual({
       type: 'custom',
       code: 'smile',
     } as const satisfies EmojiStateCustom;
@@ -135,10 +155,48 @@ describe('loadEmojiDataToState', () => {
     expect(result).toBeNull();
   });
 
+  test('loads unicode data using legacy shortcode', async () => {
+    const dbLegacyCall = vi
+      .spyOn(db, 'loadLegacyShortcodesByShortcode')
+      .mockResolvedValueOnce({
+        shortcodes: ['test'],
+        hexcode: 'test',
+      });
+    const dbUnicodeCall = vi
+      .spyOn(db, 'loadEmojiByHexcode')
+      .mockResolvedValue(unicodeEmojiFactory());
+    const unicodeState = {
+      type: 'unicode',
+      code: 'test',
+    } as const satisfies EmojiStateUnicode;
+    const result = await loadEmojiDataToState(unicodeState, 'en');
+    expect(dbLegacyCall).toHaveBeenCalledWith('test');
+    expect(dbUnicodeCall).toHaveBeenCalledWith('test', 'en');
+    expect(result).toEqual({
+      type: 'unicode',
+      code: 'test',
+      data: unicodeEmojiFactory(),
+      shortcode: 'test',
+    });
+  });
+
   test('returns null if unicode emoji not found in database', async () => {
     vi.spyOn(db, 'loadEmojiByHexcode').mockResolvedValueOnce(undefined);
-    const unicodeState = { type: 'unicode', code: '1F60A' } as const;
+    const unicodeState = {
+      type: 'unicode',
+      code: '1F60A',
+    } as const satisfies EmojiStateUnicode;
     const result = await loadEmojiDataToState(unicodeState, 'en');
+    expect(result).toBeNull();
+  });
+
+  test('returns null if custom emoji not found in database', async () => {
+    vi.spyOn(db, 'loadCustomEmojiByShortcode').mockResolvedValueOnce(undefined);
+    const customState = {
+      type: 'custom',
+      code: 'smile',
+    } as const satisfies EmojiStateCustom;
+    const result = await loadEmojiDataToState(customState, 'en');
     expect(result).toBeNull();
   });
 
@@ -151,7 +209,10 @@ describe('loadEmojiDataToState', () => {
       .spyOn(console, 'warn')
       .mockImplementationOnce(() => null);
 
-    const unicodeState = { type: 'unicode', code: '1F60A' } as const;
+    const unicodeState = {
+      type: 'unicode',
+      code: '1F60A',
+    } as const satisfies EmojiStateUnicode;
     const result = await loadEmojiDataToState(unicodeState, 'en');
 
     expect(dbCall).toHaveBeenCalledTimes(2);
