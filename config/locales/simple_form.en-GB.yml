@@ -56,7 +56,7 @@ en-GB:
         scopes: Which APIs the application will be allowed to access. If you select a top-level scope, you don't need to select individual ones.
         setting_advanced_layout: Display Mastodon as a multi-column layout, allowing you to view the timeline, notifications, and a third column of your choosing. Not recommended for smaller screens.
         setting_aggregate_reblogs: Do not show new boosts for posts that have been recently boosted (only affects newly-received boosts)
-        setting_always_send_emails: Normally e-mail notifications won't be sent when you are actively using Mastodon
+        setting_always_send_emails: Normally email notifications won't be sent when you are actively using Mastodon
         setting_boost_modal: When enabled, boosting will first open a confirmation dialogue in which you can change the visibility of your boost.
         setting_default_quote_policy_private: Followers-only posts authored on Mastodon can't be quoted by others.
         setting_default_quote_policy_unlisted: When people quote you, their post will also be hidden from trending timelines.
@@ -295,7 +295,7 @@ en-GB:
         min_age: Minimum age requirement
         peers_api_enabled: Publish list of discovered servers in the API
         profile_directory: Enable profile directory
-        registrations_mode: Who can sign-up
+        registrations_mode: Who can sign up
         remote_live_feed_access: Access to live feeds featuring remote posts
         remote_topic_feed_access: Access to hashtag and link feeds featuring remote posts
         require_invite_text: Require a reason to join
