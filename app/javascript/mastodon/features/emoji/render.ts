@@ -5,7 +5,6 @@ import {
   EMOJI_TYPE_CUSTOM,
 } from './constants';
 import {
-  loadCustomEmojiByShortcode,
   loadEmojiByHexcode,
   loadLegacyShortcodesByShortcode,
   LocaleNotLoadedError,
@@ -126,28 +125,18 @@ export async function loadEmojiDataToState(
   try {
     const legacyCode = await loadLegacyShortcodesByShortcode(state.code);
     // This is duplicative, but that's because TS can't distinguish the state type easily.
-    if (state.type === EMOJI_TYPE_UNICODE || legacyCode) {
-      const data = await loadEmojiByHexcode(
-        legacyCode?.hexcode ?? state.code,
-        locale,
-      );
-      if (data) {
-        return {
-          ...state,
-          type: EMOJI_TYPE_UNICODE,
-          data,
-          // TODO: Use CLDR shortcodes when the picker supports them.
-          shortcode: legacyCode?.shortcodes.at(0),
-        };
-      }
-    } else {
-      const data = await loadCustomEmojiByShortcode(state.code);
-      if (data) {
-        return {
-          ...state,
-          data,
-        };
-      }
+    const data = await loadEmojiByHexcode(
+      legacyCode?.hexcode ?? state.code,
+      locale,
+    );
+    if (data) {
+      return {
+        ...state,
+        type: EMOJI_TYPE_UNICODE,
+        data,
+        // TODO: Use CLDR shortcodes when the picker supports them.
+        shortcode: legacyCode?.shortcodes.at(0),
+      };
     }
 
     // If not found, assume it's not an emoji and return null.
