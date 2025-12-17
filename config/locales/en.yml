@@ -899,6 +899,7 @@ en:
         publish_statistics: Publish statistics
         title: Discovery
         trends: Trends
+        wrapstodon: Wrapstodon
       domain_blocks:
         all: To everyone
         disabled: To no one
