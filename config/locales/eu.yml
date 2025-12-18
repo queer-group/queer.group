@@ -7,6 +7,8 @@ eu:
     hosted_on: Mastodon %{domain} domeinuan ostatatua
     title: Honi buruz
   accounts:
+    errors:
+      cannot_be_added_to_collections: Ezin da kontu hau bildumetara gehitu.
     followers:
       one: Jarraitzaile
       other: jarraitzaile
@@ -579,6 +581,8 @@ eu:
         create: Gehitu Moderazio Oharra
         created_msg: Instantziako moderazio oharra ongi sortu da!
         description_html: Ikusi eta idatzi oharrak beste moderatzaileentzat eta zuretzat etorkizunerako
+        destroyed_msg: Instantziako moderazio oharra ongi ezabatu da!
+        placeholder: Instantzia honi buruzko informazioa, burututako ekintzak edo etorkizunean instantzia hau moderatzen lagunduko dizun beste edozein gauza.
         title: Moderazio oharrak
       private_comment: Iruzkin pribatua
       public_comment: Iruzkin publikoa
@@ -829,12 +833,15 @@ eu:
         publish_statistics: Argitaratu estatistikak
         title: Aurkitzea
         trends: Joerak
+        wrapstodon: Wrapstodon
       domain_blocks:
         all: Guztiei
         disabled: Inori ez
         users: Saioa hasita duten erabiltzaile lokalei
       feed_access:
         modes:
+          authenticated: Saioa hasi duten erabiltzaileentzat soilik
+          disabled: Erabiltzaile-rol jakin bat behar da
           public: Edonork
       landing_page:
         values:
@@ -1071,6 +1078,19 @@ eu:
       trending: Joerak
     username_blocks:
       add_new: Gehitu berria
+      block_registrations: Blokeatu izen-emateak
+      comparison:
+        equals: Berdin
+      delete: Ezabatu
+      edit:
+        title: Editatu erabiltzaile-izena araua
+      matches_exactly_html: 'Berdin: %{string}'
+      new:
+        create: Sortu araua
+        title: Sortu erabiltzaile-izen araua berria
+      no_username_block_selected: Ez da erabiltzaile-izen araurik aldatu, ez delako bat ere hautatu
+      not_permitted: Baimendu gabea
+      title: Erabiltzaile-izen arauak
     warning_presets:
       add_new: Gehitu berria
       delete: Ezabatu
@@ -1569,6 +1589,7 @@ eu:
       disabled_account: Zure uneko kontua ezin izango da gero erabili. Hala ere, datua exporatu ahal izango dituzu, eta berriro aktibatu.
       followers: Ekintza honek jarraitzaile guztiak eramango ditu uneko kontutik kontu berrira
       only_redirect_html: Bestela, <a href="%{path}">zure profilean birbideratze bat jar</a> dezakezu.
+      other_data: Ez da beste daturik automatikoki mugituko (zure argitalpenak eta jarraitzen dituzun kontuen zerrenda barne)
       redirect: Zure uneko kontuaren profila eguneratuko da birbideratze ohar batekin eta bilaketetatik kenduko da
   moderation:
     title: Moderazioa
@@ -1602,16 +1623,22 @@ eu:
       body: "%{name}(e)k aipatu zaitu:"
       subject: "%{name}(e)k aipatu zaitu"
       title: Aipamen berria
+    moderation_warning:
+      subject: Moderazio-abisu bat jaso duzu
     poll:
       subject: "%{name} erabiltzailearen inkesta bat amaitu da"
     quote:
       body: "%{name}(e)k zure bidalketari aipamena egin dio:"
       subject: "%{name} erabiltzaileak zure bidalketa aipatu du"
       title: Aipamen berria
+    quoted_update:
+      subject: "%{name} erabiltzaileak aipatu duzun post bat editatu du"
     reblog:
       body: "%{name}(e)k bultzada eman dio zure bidalketari:"
       subject: "%{name}(e)k bultzada eman dio zure bidalketari"
       title: Bultzada berria
+    severed_relationships:
+      subject: Harremanak galdu dituzu moderazio-erabaki baten ondorioz
     status:
       subject: "%{name} erabiltzaileak bidalketa egin berri du"
     update:
@@ -2070,3 +2097,6 @@ eu:
     not_supported: Nabigatzaile honek ez ditu segurtasun gakoak onartzen
     otp_required: Segurtasun gakoak erabili aurretik bi faktoreko autentifikazioa gaitu behar duzu.
     registered_on: "%{date}(e)an erregistratua"
+  wrapstodon:
+    description: Begira nola erabili duen Mastodon %{name}(e)k urte honetan!
+    title: "%{year}(e)ko Wrapstodona, %{name}(e)rentzat"
