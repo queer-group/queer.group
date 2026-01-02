@@ -529,7 +529,7 @@ de:
     instances:
       audit_log:
         title: Neueste Protokolle
-        view_all: Protokolle
+        view_all: Alle Protokolle anzeigen
       availability:
         description_html:
           one: Wenn die Zustellung an die Domain <strong>%{count} Tag</strong> lang erfolglos bleibt, werden keine weiteren Zustellversuche unternommen, bis eine Zustellung <em>von</em> der Domain empfangen wird.
@@ -652,8 +652,8 @@ de:
     reports:
       account:
         notes:
-          one: "%{count} Vermerk"
-          other: "%{count} Vermerke"
+          one: "%{count} Notiz"
+          other: "%{count} Notizen"
       action_log: Protokoll
       action_taken_by: Maßnahme ergriffen von
       actions:
@@ -696,9 +696,9 @@ de:
         create_and_resolve: Mit Notiz als geklärt markieren
         create_and_unresolve: Mit Notiz wieder öffnen
         delete: Löschen
-        placeholder: Bitte beschreibe, welche Maßnahmen ergriffen worden sind, und führe alles auf, was es Erwähnenswertes zu diesem Profil zu berichten gibt …
-        title: Vermerke
-      notes_description_html: Internen Vermerk an dich und andere Moderator*innen hinterlassen
+        placeholder: Bitte beschreibe, welche Maßnahmen bzw. Sanktionen ergriffen worden sind, und führe alles auf, was es Erwähnenswertes zu diesem Profil zu berichten gibt …
+        title: Notizen
+      notes_description_html: Internen Hinweis an dich und andere Moderator*innen hinterlassen
       processed_msg: Meldung Nr. %{id} erfolgreich bearbeitet
       quick_actions_description_html: 'Führe eine schnelle Aktion aus oder scrolle nach unten, um gemeldete Inhalte zu sehen:'
       remote_user_placeholder: das externe Profil von %{instance}
@@ -779,23 +779,23 @@ de:
         manage_reports: Meldungen
         manage_reports_description: Meldungen überprüfen und Vorfälle moderieren
         manage_roles: Rollen verwalten
-        manage_roles_description: Rollen, die sich unterhalb der eigenen Rolle befinden, verwalten und zuweisen
-        manage_rules: Serverregeln
-        manage_rules_description: Serverregeln ändern
-        manage_settings: Einstellungen
-        manage_settings_description: Einstellungen dieses Servers ändern
-        manage_taxonomies: Hashtags
-        manage_taxonomies_description: Trends überprüfen und Einstellungen für Hashtags
-        manage_user_access: Kontozugriff
-        manage_user_access_description: Zwei-Faktor-Authentisierungen anderer können deaktiviert, E-Mail-Adressen geändert und Passwörter zurückgesetzt werden
-        manage_users: Konten
-        manage_users_description: Details anderer Profile einsehen und Moderation von Konten
-        manage_webhooks: Webhooks
-        manage_webhooks_description: Webhooks für administrative Vorgänge einrichten
+        manage_roles_description: Erlaubt es Benutzer*innen, Rollen, die sich unterhalb der eigenen Rolle befinden, zu verwalten und zuzuweisen
+        manage_rules: Serverregeln verwalten
+        manage_rules_description: Erlaubt es Benutzer*innen, Serverregeln zu ändern
+        manage_settings: Einstellungen verwalten
+        manage_settings_description: Erlaubt Nutzer*innen, Einstellungen dieses Servers zu ändern
+        manage_taxonomies: Hashtags verwalten
+        manage_taxonomies_description: Ermöglicht Benutzer*innen, die Trends zu überprüfen und die Hashtag-Einstellungen zu aktualisieren
+        manage_user_access: Kontozugriff verwalten
+        manage_user_access_description: Erlaubt Nutzer*innen, die Zwei-Faktor-Authentisierung anderer zu deaktivieren, ihre E-Mail-Adresse zu ändern und ihr Passwort zurückzusetzen
+        manage_users: Konten verwalten
+        manage_users_description: Erlaubt es Benutzer*innen, die Details anderer Profile einzusehen und diese Accounts zu moderieren
+        manage_webhooks: Webhooks verwalten
+        manage_webhooks_description: Erlaubt es Benutzer*innen, Webhooks für administrative Vorkommnisse einzurichten
         view_audit_log: Protokoll anzeigen
-        view_audit_log_description: Verlauf der administrativen Vorgänge auf diesem Server
-        view_dashboard: Dashboard
-        view_dashboard_description: Dashboard und verschiedene Metriken
+        view_audit_log_description: Erlaubt es Benutzer*innen, den Verlauf der administrativen Handlungen auf diesem Server einzusehen
+        view_dashboard: Dashboard anzeigen
+        view_dashboard_description: Gewährt Benutzer*innen den Zugriff auf das Dashboard und verschiedene Metriken
         view_devops: DevOps
         view_devops_description: Erlaubt es Benutzer*innen, auf die Sidekiq- und pgHero-Dashboards zuzugreifen
         view_feeds: Live-Feeds und Hashtags anzeigen
@@ -1058,7 +1058,7 @@ de:
           other: In den vergangenen 7 Tagen von %{count} Profilen geteilt
         title: Angesagte Links
         usage_comparison: Heute %{today} × und gestern %{yesterday} × geteilt
-      not_allowed_to_trend: Darf nicht trenden
+      not_allowed_to_trend: Trend nicht erlaubt
       only_allowed: Nur Genehmigte
       pending_review: Überprüfung ausstehend
       preview_card_providers:
@@ -1319,6 +1319,13 @@ de:
     hint_html: "<strong>Hinweis:</strong> Wir werden dich für die nächste Stunde nicht erneut nach deinem Passwort fragen."
     invalid_password: Ungültiges Passwort
     prompt: Bestätige mit deinem Passwort, um fortzufahren
+  color_scheme:
+    auto: Automatisch
+    dark: Dunkel
+    light: Hell
+  contrast:
+    auto: Automatisch
+    high: Hoch
   crypto:
     errors:
       invalid_key: ist kein gültiger Ed25519- oder Curve25519-Schlüssel
@@ -1724,7 +1731,7 @@ de:
       subject: "%{name} teilte deinen Beitrag"
       title: Dein Beitrag wurde geteilt
     severed_relationships:
-      subject: Du hast die Verbindung aufgrund einer Moderationsentscheidung verloren
+      subject: Du hast den Zugriff auf diesen Server wegen einer Entscheidung der Moderator*innen verloren
     status:
       subject: "%{name} veröffentlichte gerade einen Beitrag"
     update:
@@ -1970,7 +1977,7 @@ de:
     ignore_favs: Favoriten ignorieren
     ignore_reblogs: Geteilte Beiträge ignorieren
     interaction_exceptions: Ausnahmen basierend auf Interaktionen
-    interaction_exceptions_explanation: Beachte, dass Beiträge nicht gelöscht werden, sobald deine Grenzwerte für Favoriten oder geteilte Beiträge einmal überschritten wurden – auch dann nicht, wenn diese Grenzwerte mittlerweile nicht mehr erreicht werden.
+    interaction_exceptions_explanation: Beachte, dass Beiträge nicht gelöscht werden, sobald deine Grenzwerte für Favoriten oder geteilte Beiträge einmal überschritten wurden – auch dann nicht, wenn diese Schwellenwerte mittlerweile nicht mehr erreicht werden.
     keep_direct: Private Erwähnungen behalten
     keep_direct_hint: Löscht keinen deiner Beiträge mit privaten Erwähnungen
     keep_media: Beiträge mit Medien behalten
