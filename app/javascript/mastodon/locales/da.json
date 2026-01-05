@@ -958,7 +958,7 @@
   "status.quote.cancel": "Annullér citat",
   "status.quote_error.blocked_account_hint.title": "Dette indlæg er skjult, fordi du har blokeret @{name}.",
   "status.quote_error.blocked_domain_hint.title": "Dette indlæg er skjult, fordi du har blokeret @{domain}.",
-  "status.quote_error.filtered": "Skjult grundet et af filterne",
+  "status.quote_error.filtered": "Skjult på grund af et af dine filtre",
   "status.quote_error.limited_account_hint.action": "Vis alligevel",
   "status.quote_error.limited_account_hint.title": "Denne profil er blevet skjult af {domain}-moderatorerne.",
   "status.quote_error.muted_account_hint.title": "Dette indlæg er skjult, fordi du har skjult @{name}.",
