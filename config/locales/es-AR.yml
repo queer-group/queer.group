@@ -2190,6 +2190,7 @@ es-AR:
       error: Hubo un problema al eliminar tu llave de seguridad. Por favor, intentá de nuevo.
       success: Se eliminó exitosamente tu llave de seguridad.
     invalid_credential: Llave de seguridad no válida
+    nickname: Apodo de la llave
     nickname_hint: Ingresá el apodo de tu nueva llave de seguridad
     not_enabled: Todavía no habilitaste WebAuthn
     not_supported: Este navegador web no soporta llaves de seguridad
