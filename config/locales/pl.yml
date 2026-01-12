@@ -866,6 +866,7 @@ pl:
         publish_statistics: Publikuj statystyki
         title: Odkrywanie
         trends: Trendy
+        wrapstodon: Wrapstodon
       domain_blocks:
         all: Każdemu
         disabled: Nikomu
@@ -1338,6 +1339,13 @@ pl:
     hint_html: "<strong>Informacja:</strong> Nie będziemy prosić Cię o ponowne podanie hasła przez następną godzinę."
     invalid_password: Nieprawidłowe hasło
     prompt: Potwierdź hasło, aby kontynuować
+  color_scheme:
+    auto: Automatyczne
+    dark: Ciemny
+    light: Jasny
+  contrast:
+    auto: Automatyczny
+    high: Wysoki
   crypto:
     errors:
       invalid_key: nie jest prawidłowym kluczem Ed25519 lub Curve25519
