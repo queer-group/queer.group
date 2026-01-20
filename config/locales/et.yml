@@ -1318,7 +1318,7 @@ et:
     confirm: Jätka
     hint_html: "<strong>Nõuanne:</strong> Me ei küsi sinu salasõna uuesti järgmise tunni jooksul."
     invalid_password: Vigane salasõna
-    prompt: Jätkamiseks salasõna veelkord
+    prompt: Jätkamiseks korda salasõna
   color_scheme:
     auto: Auto
     dark: Tume
