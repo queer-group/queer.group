@@ -872,6 +872,7 @@ sl:
           public: Vsi
       landing_page:
         values:
+          local_feed: Krajevni vir
           trends: Trendi
       registrations:
         moderation_recommandation: Preden prijave odprete za vse poskrbite, da imate v ekipi moderatorjev zadosti aktivnih članov.
@@ -1337,8 +1338,11 @@ sl:
     prompt: Potrdite geslo za nadaljevanje
   color_scheme:
     auto: Samodejno
+    dark: Temno
+    light: Svetlo
   contrast:
     auto: Samodejno
+    high: Visoko
   crypto:
     errors:
       invalid_key: ni veljaven ključ Ed25519 ali Curve25519
@@ -1413,6 +1417,7 @@ sl:
     other: Drugo
   emoji_styles:
     auto: Samodejno
+    native: Domoroden
   errors:
     '400': Zahteva, ki ste jo oddali, je neveljavna ali nepravilno oblikovana.
     '403': Nimate dovoljenja za ogled te strani.
@@ -2240,4 +2245,5 @@ sl:
     otp_required: Za uporabo varnostnih ključev morate najprej omogočiti 2FA (dvostopenjsko overjanje).
     registered_on: Datum registracije %{date}
   wrapstodon:
+    description: Oglejte si, kako je %{name} letos uporabljal/a Mastodon!
     title: Wrapstodon %{year} za %{name}
