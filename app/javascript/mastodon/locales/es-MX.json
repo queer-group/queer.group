@@ -799,7 +799,7 @@
   "privacy.private.short": "Seguidores",
   "privacy.public.long": "Cualquiera dentro y fuera de Mastodon",
   "privacy.public.short": "Público",
-  "privacy.quote.anyone": "{visibility}, cualquiera puede citar",
+  "privacy.quote.anyone": "{visibility}, citas permitidas",
   "privacy.quote.disabled": "{visibility}, citas desactivadas",
   "privacy.quote.limited": "{visibility}, citas limitadas",
   "privacy.unlisted.additional": "Esto funciona exactamente igual que «público», excepto que la publicación no aparecerá en las transmisiones en vivo ni en las etiquetas, en «explorar» ni en la búsqueda de Mastodon, incluso si has optado por ello en toda tu cuenta.",

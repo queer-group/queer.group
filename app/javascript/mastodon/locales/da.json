@@ -804,7 +804,7 @@
   "privacy.private.short": "Følgere",
   "privacy.public.long": "Alle på og udenfor Mastodon",
   "privacy.public.short": "Offentlig",
-  "privacy.quote.anyone": "{visibility}, alle kan citere",
+  "privacy.quote.anyone": "{visibility}, citering tilladt",
   "privacy.quote.disabled": "{visibility}, citering deaktiveret",
   "privacy.quote.limited": "{visibility}, citering begrænset",
   "privacy.unlisted.additional": "Dette svarer til offentlig, bortset fra at indlægget ikke vises i live-feeds eller hashtags, udforsk eller Mastodon-søgning, selvom du har tilvalgt dette for kontoen.",

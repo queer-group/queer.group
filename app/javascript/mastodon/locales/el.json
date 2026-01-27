@@ -804,7 +804,7 @@
   "privacy.private.short": "Ακόλουθοι",
   "privacy.public.long": "Όλοι εντός και εκτός του Mastodon",
   "privacy.public.short": "Δημόσια",
-  "privacy.quote.anyone": "{visibility}, ο καθένας μπορεί να παραθέσει",
+  "privacy.quote.anyone": "{visibility}, παραθέσεις επιτρεπτές",
   "privacy.quote.disabled": "{visibility}, παραθέσεις απενεργοποιημένες",
   "privacy.quote.limited": "{visibility}, παραθέσεις περιορισμένες",
   "privacy.unlisted.additional": "Αυτό συμπεριφέρεται ακριβώς όπως το δημόσιο, εκτός από το ότι η ανάρτηση δεν θα εμφανιστεί σε ζωντανές ροές ή ετικέτες, εξερεύνηση ή αναζήτηση στο Mastodon, ακόμη και αν το έχεις επιλέξει για τον λογαριασμό σου.",
