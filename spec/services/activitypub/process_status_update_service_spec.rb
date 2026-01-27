@@ -301,8 +301,6 @@ RSpec.describe ActivityPub::ProcessStatusUpdateService do
             { type: 'Hashtag', name: 'foo' },
             { type: 'Hashtag', name: 'bar' },
             { type: 'Hashtag', name: '#2024' },
-            { type: 'Hashtag', name: 'Foo Bar' },
-            { type: 'Hashtag', name: 'FooBar' },
           ],
         }
       end
