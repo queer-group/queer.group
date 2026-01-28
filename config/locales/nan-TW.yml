@@ -7,6 +7,11 @@ nan-TW:
     hosted_on: 佇 %{domain} 運作 ê Mastodon站
     title: 關係本站
   accounts:
+<<<<<<< HEAD
+=======
+    errors:
+      cannot_be_added_to_collections: Tsit ê口座袂當加入kàu集合。
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
     followers:
       other: 跟tuè ê
     following: Leh跟tuè
@@ -71,8 +76,13 @@ nan-TW:
       enable_sign_in_token_auth: 啟用電子phue ê token認證
       enabled: 啟用ah
       enabled_msg: 成功kā %{username} ê口座退冰
+<<<<<<< HEAD
       followers: 跟tuè伊ê
       follows: 伊跟tuè ê
+=======
+      followers: 跟tuè lí ê
+      follows: Lí跟tuè ê
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
       header: 封面ê圖
       inbox_url: 收件kheh-á ê URL
       invite_request_text: 加入ê理由
@@ -674,7 +684,11 @@ nan-TW:
       forwarded_replies_explanation: 本報告是tuì別站ê用者送ê，關係別站ê內容。本報告轉hōo lí，因為受檢舉ê內容是回應lí ê服侍器ê用者。
       forwarded_to: 有轉送kàu %{domain}
       mark_as_resolved: 標做「解決ah」
+<<<<<<< HEAD
       mark_as_sensitive: 標做敏感ê
+=======
+      mark_as_sensitive: 標做敏感
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
       mark_as_unresolved: 標做「無解決」
       no_one_assigned: 無lâng
       notes:
@@ -707,7 +721,11 @@ nan-TW:
           suspend_html: Lí teh-beh <strong>停止</strong> <strong>@%{acct}</strong> ê口座權限。Tse ē：
         actions:
           delete_html: Thâi掉冒犯ê PO文
+<<<<<<< HEAD
           mark_as_sensitive_html: Kā冒犯êPO文ê媒體標做敏感ê
+=======
+          mark_as_sensitive_html: Kā冒犯êPO文ê媒體標做敏感
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
           silence_html: Kā in ê個人資料kap內容標做kan-ta有跟tuè ê，á是手動tshiau伊ê個人檔案ê，通看見，來嚴嚴限制 <strong>@%{acct}</strong> ê傳播範圍
           suspend_html: Kā <strong>@%{acct}</strong> 停止權限，koh kā in ê 個人資料kap內容標做bē當用，kap bē當hām in互動
         close_report: 'Kā 檢舉報告 #%{id} 標做解決ah'
@@ -832,6 +850,10 @@ nan-TW:
         publish_statistics: 發布統計
         title: 發現
         trends: 趨勢
+<<<<<<< HEAD
+=======
+        wrapstodon: Wrapstodon
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
       domain_blocks:
         all: Kàu ta̍k ê lâng
         disabled: 無kàu tó tsi̍t ê
@@ -916,7 +938,11 @@ nan-TW:
         disable: "%{name} kā %{target} ê口座冷凍ah"
         mark_statuses_as_sensitive: "%{name} kā %{target} êPO文標做敏感ê內容"
         none: "%{name} 送警告hōo %{target} ah"
+<<<<<<< HEAD
         sensitive: "%{name} kā %{target} ê口座標做敏感ê"
+=======
+        sensitive: "%{name} kā %{target} ê口座標做敏感"
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
         silence: "%{name} 限制 %{target} ê口座"
         suspend: "%{name} kā %{target} ê口座停止權限ah"
       appeal_approved: 投訴ah
@@ -1220,7 +1246,11 @@ nan-TW:
       welcome_title: 歡迎 %{name}！
       wrong_email_hint: Nā是電子phue ê地址無正確，lí ē當tī口座設定kā改。
     delete_account: Thâi掉口座
+<<<<<<< HEAD
     delete_account_html: Nā lí beh thâi掉lí ê口座，lí ē當<a href="%{path}">ji̍h tsia繼續</a>。Lí著確認動作。
+=======
+    delete_account_html: Nā lí behthâi掉lí ê口座，lí ē當<a href="%{path}">ji̍h tsia繼續</a>。Lí著確認動作。
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
     description:
       prefix_invited_by_user: "@%{name} 邀請lí加入tsit ê Mastodon 服侍器！"
       prefix_sign_up: Tsit-má註冊Mastodon ê口座！
@@ -1297,6 +1327,16 @@ nan-TW:
     hint_html: "<strong>提醒：</strong>Guán佇一點鐘內底，bē koh問密碼。"
     invalid_password: 無效ê密碼
     prompt: 確認密碼來繼續
+<<<<<<< HEAD
+=======
+  color_scheme:
+    auto: 自動
+    dark: 暗ê
+    light: 光ê
+  contrast:
+    auto: 自動
+    high: 高ê
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
   crypto:
     errors:
       invalid_key: m̄是有效ê Ed25519 á是 Curve25519 鎖
@@ -1633,6 +1673,10 @@ nan-TW:
       disabled_account: 了後，lí 目前ê口座ē完全bē當用。毋過，lí ē有接近使用權，來輸出資料kap重啟用。
       followers: Tsit ê動作ē對tsit má ê口座suá逐个跟tuè ê，kàu新ê口座
       only_redirect_html: Á是lí通<a href="%{path}">kan-ta 佇lí ê個人資料khǹg重轉</a>。
+<<<<<<< HEAD
+=======
+      other_data: 其他ê資料bē自動轉（包含lí ê PO文kap lí跟tuè ê口座列單）
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
       redirect: Lí tsit-má 口座ê個人資料ē更新，加添重轉標示，而且buē包佇tshiau-tshuē ê結果。
   moderation:
     title: 管理
@@ -1666,16 +1710,31 @@ nan-TW:
       body: "%{name} 佇PO文kā lí提起："
       subject: "%{name} 佇PO文kā lí提起"
       title: 新ê提起
+<<<<<<< HEAD
+=======
+    moderation_warning:
+      subject: Lí有收著管理ê警告
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
     poll:
       subject: "%{name} 舉辦ê投票suah ah"
     quote:
       body: Lí ê PO文hōo %{name} 引用：
       subject: "%{name} 引用lí ê PO文"
       title: 新ê引用
+<<<<<<< HEAD
+=======
+    quoted_update:
+      subject: "%{name} 編輯lí有引用ê PO文"
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
     reblog:
       body: Lí ê PO文hōo %{name} 轉送：
       subject: "%{name} 轉送lí ê PO文"
       title: 新ê轉送
+<<<<<<< HEAD
+=======
+    severed_relationships:
+      subject: 因為管理ê決定，lí失去聯絡ah
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
     status:
       subject: "%{name} 頭tú-á PO文"
     update:
@@ -1732,6 +1791,7 @@ nan-TW:
     privacy: 隱私權
     privacy_hint_html: 控制lí想欲為別lâng ê利益，公開guā tsē內容。Lâng用瀏覽別lâng ê跟tuè koh看in用啥物應用程式PO文，來發現心適ê個人資料kap時行ê應用程式，但是lí凡勢beh保持khàm起來。
     reach: 接觸
+<<<<<<< HEAD
     reach_hint_html: 控制lí kám beh 受新lâng發現kap跟tuè。Lí kám beh予lí ê PO文出現佇探索ê頁？Lí kám 想beh予別lâng佇in ê新ê跟tuè建議內看著lí？Lí kám beh允准別lâng自動跟tuè lí，á是beh一ê一ê控制？
     search: Tshiau-tshuē
     search_hint_html: 控制lí想beh予lâng發現ê方法。Lí kám beh予別lâng用lí公開PO文ê主題揣著lí？Lí kám beh予Mastodon以外ê lâng，佇網路tshiau-tshuē ê時，tshuē著lí ê個人資料？請注意，公開ê資訊bē當保證lóng總予所有tshiau-tshuē ia̋n-jín排除。
@@ -1949,6 +2009,12 @@ nan-TW:
       too_late: Lí bē赴申訴tsit ê處份ah
   tags:
     does_not_match_previous_name: kap進前ê名無kâng
+=======
+  scheduled_statuses:
+    too_soon: Tio̍h用未來ê日期。
+  statuses:
+    default_language: Kap界面ê語言sio kâng
+>>>>>>> 42dfd6c031 (New Crowdin Translations (automated) (#37647))
   terms_of_service:
     title: 服務規定
   two_factor_authentication:
