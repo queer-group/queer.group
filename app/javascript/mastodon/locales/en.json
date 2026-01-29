@@ -427,6 +427,7 @@
   "featured_carousel.current": "<sr>Post</sr> {current, number} / {max, number}",
   "featured_carousel.header": "{count, plural, one {Pinned Post} other {Pinned Posts}}",
   "featured_carousel.slide": "Post {current, number} of {max, number}",
+  "featured_tags.more_items": "+{count}",
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow post to reach other instances",
   "federation.federated.short": "Federated",
