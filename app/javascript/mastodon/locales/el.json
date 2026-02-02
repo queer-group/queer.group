@@ -204,7 +204,7 @@
   "bundle_modal_error.close": "Κλείσιμο",
   "bundle_modal_error.message": "Κάτι πήγε στραβά κατά τη φόρτωση αυτής της οθόνης.",
   "bundle_modal_error.retry": "Δοκίμασε ξανά",
-  "callout.dismiss": "Απόρριψη",
+  "callout.dismiss": "Παράβλεψη",
   "carousel.current": "<sr>Διαφάνεια</sr> {current, number} / {max, number}",
   "carousel.slide": "Διαφάνεια {current, number} από {max, number}",
   "closed_registrations.other_server_instructions": "Καθώς το Mastodon είναι αποκεντρωμένο, μπορείς να δημιουργήσεις λογαριασμό σε άλλον διακομιστή αλλά να συνεχίσεις να αλληλεπιδράς με αυτόν.",

@@ -512,7 +512,7 @@
   "hashtag.column_settings.tag_mode.all": "全部",
   "hashtag.column_settings.tag_mode.any": "任一",
   "hashtag.column_settings.tag_mode.none": "全不",
-  "hashtag.column_settings.tag_toggle": "將額外標籤加入到這個欄位",
+  "hashtag.column_settings.tag_toggle": "將額外標籤加入至此欄位",
   "hashtag.counter_by_accounts": "{count, plural, other {{counter} 名參與者}}",
   "hashtag.counter_by_uses": "{count, plural, other {{counter} 則嘟文}}",
   "hashtag.counter_by_uses_today": "本日有 {count, plural, other {{counter} 則嘟文}}",
