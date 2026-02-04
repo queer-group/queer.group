@@ -693,8 +693,8 @@ fi:
       no_one_assigned: Ei kukaan
       notes:
         create: Lisää muistiinpano
-        create_and_resolve: Ratkaise ja lisää muistiinpano
-        create_and_unresolve: Avaa uudelleen ja lisää muistiinpano
+        create_and_resolve: Ratkaise ja jätä muistiinpano
+        create_and_unresolve: Avaa uudelleen ja jätä muistiinpano
         delete: Poista
         placeholder: Kuvaile tehtyjä toimia tai lisää muita käyttäjään liittyviä merkintöjä…
         title: Muistiinpanot
@@ -1317,8 +1317,8 @@ fi:
   challenge:
     confirm: Jatka
     hint_html: "<strong>Vihje:</strong> Emme pyydä sinulta salasanaa uudelleen seuraavan tunnin aikana."
-    invalid_password: Virheellinen salasana
-    prompt: Vahvista salasanasi jatkaaksesi
+    invalid_password: Väärä salasana
+    prompt: Jatka vahvistalla salasanasi
   color_scheme:
     auto: Automaattinen
     dark: Tumma
@@ -1565,7 +1565,7 @@ fi:
       finished: Valmis
       in_progress: Käynnissä
       scheduled: Ajastettu
-      unconfirmed: Varmistamaton
+      unconfirmed: Vahvistamaton
     status: Tila
     success: Tietojen lähettäminen onnistui, ja ne käsitellään aivan pian
     time_started: Aloitettu

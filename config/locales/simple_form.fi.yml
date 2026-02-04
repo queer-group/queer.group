@@ -175,7 +175,7 @@ fi:
     labels:
       account:
         attribution_domains: Verkkosivustot, jotka voivat antaa sinulle tunnustusta
-        discoverable: Pidä profiiliasi ja julkaisujasi esillä löydettävyysalgoritmeissa
+        discoverable: Esittele profiilia ja julkaisuja löydettävyysalgoritmeissa
         fields:
           name: Nimike
           value: Sisältö
