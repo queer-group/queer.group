@@ -12,7 +12,9 @@ fi:
     followers:
       one: seuraaja
       other: seuraajaa
-    following: seurattavaa
+    following:
+      one: seurattava
+      other: seurattavaa
     instance_actor_flash: Tämä tili on virtuaalinen toimija, jota käytetään edustamaan itse palvelinta eikä yksittäistä käyttäjää. Sitä käytetään federointitarkoituksiin, eikä sitä tule jäädyttää.
     last_active: viimeksi aktiivinen
     link_verified_on: Tämän linkin omistus on tarkastettu %{date}
@@ -693,8 +695,8 @@ fi:
       no_one_assigned: Ei kukaan
       notes:
         create: Lisää muistiinpano
-        create_and_resolve: Ratkaise ja jätä muistiinpano
-        create_and_unresolve: Avaa uudelleen ja jätä muistiinpano
+        create_and_resolve: Ratkaise ja lisää muistiinpano
+        create_and_unresolve: Avaa uudelleen ja lisää muistiinpano
         delete: Poista
         placeholder: Kuvaile tehtyjä toimia tai lisää muita käyttäjään liittyviä merkintöjä…
         title: Muistiinpanot

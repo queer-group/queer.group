@@ -12,7 +12,9 @@ fr-CA:
     followers:
       one: Abonné·e
       other: Abonné·e·s
-    following: Abonnements
+    following:
+      one: Abonnement
+      other: Abonnements
     instance_actor_flash: Ce compte est un acteur virtuel utilisé pour représenter le serveur lui-même et non un utilisateur individuel. Il est utilisé à des fins de fédération et ne doit pas être suspendu.
     last_active: dernière activité
     link_verified_on: La propriété de ce lien a été vérifiée le %{date}
