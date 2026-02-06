@@ -23,6 +23,7 @@
   "account.badges.domain_blocked": "Αποκλεισμένος τομέας",
   "account.badges.group": "Ομάδα",
   "account.badges.muted": "Σε σίγαση",
+  "account.badges.muted_until": "Σε σίγαση μέχρι {until}",
   "account.block": "Αποκλεισμός @{name}",
   "account.block_domain": "Αποκλεισμός τομέα {domain}",
   "account.block_short": "Αποκλεισμός",
