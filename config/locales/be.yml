@@ -2109,10 +2109,7 @@ be:
     review_link: Прачытаць умовы карыстання
     title: На %{domain} змяняюцца ўмовы карыстання
   themes:
-    contrast: Mastodon (высокі кантраст)
-    default: Mastodon (цёмная)
-    mastodon-light: Mastodon (светлая)
-    system: Аўтаматычна (выкарыстоўваць сістэмную тэму)
+    default: Mastodon
   time:
     formats:
       default: "%d.%m.%Y %H:%M"
