@@ -540,6 +540,8 @@
   "follow_suggestions.view_all": "Alles weergeven",
   "follow_suggestions.who_to_follow": "Wie te volgen",
   "followed_tags": "Gevolgde hashtags",
+  "followers.hide_other_followers": "Deze gebruiker heeft ervoor gekozen diens andere volgers niet zichtbaar te maken",
+  "following.hide_other_following": "Deze gebruiker heeft ervoor gekozen de rest van diens gevolgde accounts niet zichtbaar te maken",
   "footer.about": "Over",
   "footer.about_mastodon": "Over Mastodon",
   "footer.about_server": "Over {domain}",

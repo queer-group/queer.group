@@ -10,8 +10,8 @@ it:
     errors:
       cannot_be_added_to_collections: Questo account non può essere aggiunto alle collezioni.
     followers:
-      one: Seguace
-      other: Seguaci
+      one: Follower
+      other: Follower
     following:
       one: Stai seguendo
       other: Stai seguendo
@@ -802,6 +802,7 @@ it:
         view_devops_description: Consente agli utenti di accedere alle dashboard Sidekiq e pgHero
         view_feeds: Visualizza feed in diretta e feed di argomenti
         view_feeds_description: Consente agli utenti di accedere ai feed in diretta e ai feed di argomenti indipendentemente dalle impostazioni del server
+      requires_2fa: Richiede l'autenticazione a due fattori
       title: Ruoli
     rules:
       add_new: Aggiungi regola
@@ -2046,6 +2047,8 @@ it:
     recovery_codes: Codici di recupero del backup
     recovery_codes_regenerated: I codici di recupero sono stati rigenerati
     recovery_instructions_html: Se perdi il telefono, puoi usare uno dei codici di recupero qui sotto per riottenere l'accesso al tuo account. <strong>Conserva i codici di recupero in un posto sicuro</strong>. Ad esempio puoi stamparli e conservarli insieme ad altri documenti importanti.
+    resume_app_authorization: Riprendere l'autorizzazione dell'applicazione
+    role_requirement: "%{domain} ti richiede di impostare l'autenticazione a due fattori prima di poter usare Mastodon."
     webauthn: Chiavi di sicurezza
   user_mailer:
     announcement_published:
