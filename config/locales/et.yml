@@ -802,6 +802,7 @@ et:
         view_devops_description: Lubab kasutajail ligipääsu Sidekiq ja pgHero töölaudadele
         view_feeds: Vaata postituste ja teemade voogu reaalajas
         view_feeds_description: Sõltumata serveri seadistustest luba kasutajatel vaadata postituste ja teemade voogu reaalajas
+      requires_2fa: Eeldab kaheastmelise autentimise kasutamist
       title: Rollid
     rules:
       add_new: Lisa reegel
@@ -2022,6 +2023,8 @@ et:
     past_preamble_html: Peale sinu viimast külastust oleme muutnud oma kasutustingimusi. Palun vaata muutunud tingimused üle.
     review_link: Vaata üle kasutustingimused
     title: "%{domain} saidi kasutustingimused muutuvad"
+  themes:
+    default: Mastodon
   time:
     formats:
       default: "%d. %B, %Y. aastal, kell %H:%M"
@@ -2046,6 +2049,8 @@ et:
     recovery_codes: Taastekoodide varundamine
     recovery_codes_regenerated: Taastekoodid edukalt taasloodud
     recovery_instructions_html: Kui telefon peaks kaotsi minema, on võimalik kontole sisenemisel kasutada ühte järgnevatest taastekoodidest. <strong>Hoia taastekoode turvaliselt</strong>. Näiteks võib neid prindituna hoida koos teiste tähtsate dokumentidega.
+    resume_app_authorization: Jätka rakenduse autentimist
+    role_requirement: "%{domain} teenus eeldab, et Mastodoni kasutamiseks lülitad sisse kaheastmelise autentimise."
     webauthn: Turvavõtmed
   user_mailer:
     announcement_published:
