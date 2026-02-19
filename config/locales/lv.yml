@@ -700,8 +700,7 @@ lv:
       resolved: Atrisināti
       resolved_msg: Ziņojums sekmīgi atrisināts.
       skip_to_actions: Pāriet uz darbībām
-      status: Stāvoklis
-      statuses: Ziņotais saturs
+      status: Statuss
       statuses_description_html: Pārkāpuma saturs tiks minēts saziņā ar paziņoto kontu
       summary:
         action_preambles:
