@@ -162,7 +162,7 @@ de:
         color: Farbe, die für diese Rolle im Webinterface verwendet wird, als RGB im Hexadezimalsystem
         highlighted: Moderative/administrative Rolle im öffentlichen Profil anzeigen
         name: Name der Rolle, der auch öffentlich als Badge angezeigt wird, sofern dies unten aktiviert ist
-        permissions_as_keys: Nutzer*innen mit dieser Rolle haben Zugriff auf …
+        permissions_as_keys: Konten mit dieser Rolle haben eine Berechtigung für …
         position: Eine höherrangige Rolle entscheidet in bestimmten Situationen über Konfliktlösungen. Einige Aktionen können jedoch nur mit untergeordneten Rollen durchgeführt werden
         require_2fa: Profile mit dieser Rolle müssen eine Zwei-Faktor-Authentisierung einrichten, um Mastodon verwenden zu können
       username_block:

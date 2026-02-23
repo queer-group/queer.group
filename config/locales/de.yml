@@ -541,7 +541,7 @@ de:
     instances:
       audit_log:
         title: Neueste Protokolle
-        view_all: Alle Protokolle anzeigen
+        view_all: Protokolle
       availability:
         description_html:
           one: Wenn die Zustellung an die Domain <strong>%{count} Tag</strong> lang erfolglos bleibt, werden keine weiteren Zustellversuche unternommen, bis eine Zustellung <em>von</em> der Domain empfangen wird.
@@ -777,7 +777,7 @@ de:
         delete_user_data: Kontodaten löschen
         delete_user_data_description: Daten anderer Profile ohne Verzögerung löschen
         invite_users: Einladungen
-        invite_users_description: Neue Benutzer*innen zur Registrierung auf diesem Server einladen
+        invite_users_description: Erlaubt bereits registrierten Benutzer*innen, neue Leute zum Server einzuladen
         manage_announcements: Ankündigungen
         manage_announcements_description: Ankündigungen dieses Servers verwalten
         manage_appeals: Einsprüche
@@ -793,27 +793,27 @@ de:
         manage_reports: Meldungen
         manage_reports_description: Meldungen überprüfen und Vorfälle moderieren
         manage_roles: Rollen verwalten
-        manage_roles_description: Erlaubt es Benutzer*innen, Rollen, die sich unterhalb der eigenen Rolle befinden, zu verwalten und zuzuweisen
-        manage_rules: Serverregeln verwalten
-        manage_rules_description: Erlaubt es Benutzer*innen, Serverregeln zu ändern
-        manage_settings: Einstellungen verwalten
-        manage_settings_description: Erlaubt Nutzer*innen, Einstellungen dieses Servers zu ändern
-        manage_taxonomies: Hashtags verwalten
-        manage_taxonomies_description: Ermöglicht Benutzer*innen, die Trends zu überprüfen und die Hashtag-Einstellungen zu aktualisieren
-        manage_user_access: Kontozugriff verwalten
-        manage_user_access_description: Erlaubt Nutzer*innen, die Zwei-Faktor-Authentisierung anderer zu deaktivieren, ihre E-Mail-Adresse zu ändern und ihr Passwort zurückzusetzen
-        manage_users: Konten verwalten
+        manage_roles_description: Rollen, die sich unterhalb der eigenen Rolle befinden, verwalten und zuweisen
+        manage_rules: Serverregeln
+        manage_rules_description: Serverregeln ändern
+        manage_settings: Einstellungen
+        manage_settings_description: Einstellungen dieses Servers ändern
+        manage_taxonomies: Hashtags
+        manage_taxonomies_description: Trends überprüfen und Einstellungen für Hashtags
+        manage_user_access: Kontozugriff
+        manage_user_access_description: Zwei-Faktor-Authentisierungen anderer können deaktiviert, E-Mail-Adressen geändert und Passwörter zurückgesetzt werden
+        manage_users: Konten
         manage_users_description: Erlaubt es Benutzer*innen, die Details anderer Profile einzusehen und diese Accounts zu moderieren
-        manage_webhooks: Webhooks verwalten
-        manage_webhooks_description: Erlaubt es Benutzer*innen, Webhooks für administrative Vorkommnisse einzurichten
+        manage_webhooks: Webhooks
+        manage_webhooks_description: Webhooks für administrative Vorgänge einrichten
         view_audit_log: Protokoll anzeigen
-        view_audit_log_description: Erlaubt es Benutzer*innen, den Verlauf der administrativen Handlungen auf diesem Server einzusehen
-        view_dashboard: Dashboard anzeigen
-        view_dashboard_description: Gewährt Benutzer*innen den Zugriff auf das Dashboard und verschiedene Metriken
+        view_audit_log_description: Verlauf der administrativen Vorgänge auf diesem Server
+        view_dashboard: Dashboard
+        view_dashboard_description: Dashboard und verschiedene Metriken
         view_devops: DevOps
-        view_devops_description: Erlaubt es Benutzer*innen, auf die Sidekiq- und pgHero-Dashboards zuzugreifen
+        view_devops_description: Auf Sidekiq- und pgHero-Dashboards zugreifen
         view_feeds: Live-Feeds und Hashtags anzeigen
-        view_feeds_description: Ermöglicht Nutzer*innen unabhängig von den Servereinstellungen den Zugriff auf die Live-Feeds und Hashtags
+        view_feeds_description: Zugriff auf Live-Feeds und Hashtags – unabhängig der Servereinstellungen
       requires_2fa: Zwei-Faktor-Authentisierung erforderlich
       title: Rollen
     rules:
@@ -1972,7 +1972,7 @@ de:
       pending_approval: Veröffentlichung ausstehend
       revoked: Beitrag durch Autor*in entfernt
     quote_policies:
-      followers: Nur Follower und ich
+      followers: Nur Follower
       nobody: Nur ich
       public: Alle
     quote_post_author: Zitierte %{acct}
