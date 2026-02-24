@@ -111,7 +111,7 @@ pt-BR:
         thumbnail: Uma imagem de aproximadamente 2:1 exibida ao lado da informação de sua instância.
         trendable_by_default: Pular a revisão manual do conteúdo em tendência. Itens individuais ainda poderão ser removidos das tendências após a sua exibição.
         trends: Tendências mostram quais publicações, hashtags e notícias estão ganhando destaque na sua instância.
-        wrapstodon: Oferece usuários locais para gerar um resumo divertido do Mastodon deles durante o ano. Este recurso está disponível entre 10 a 31 de Dezembro de cada ano, e é oferecido aos usuários que fizeram ao menos uma postagem Pública ou Silenciosa e usou ao menos uma hashtag no ano.
+        wrapstodon: Oferece aos usuários locais gerar um resumo divertido do Mastodon deles durante o ano. Este recurso está disponível entre 10 e 31 de dezembro de cada ano e é oferecido aos usuários que fizeram ao menos uma publicação Pública ou Silenciosa e usou ao menos uma hashtag no ano.
       form_challenge:
         current_password: Você está entrando em uma área segura
       imports:
@@ -164,6 +164,7 @@ pt-BR:
         name: Nome público do cargo, se ele for definido para ser exibido como um distintivo
         permissions_as_keys: Usuários com esse cargo terão acesso a...
         position: Um cargo superior decide a resolução de conflitos em certas situações. Certas ações só podem ser executadas com cargos de menor prioridade
+        require_2fa: Usuários com este papel deverão configurar autenticação de dois fatores para utilizar o Mastodon
       username_block:
         allow_with_approval: Em vez de impedir a inscrição completa, a correspondência de cadastros exigirá sua aprovação
         comparison: Por favor, esteja atento ao problema de Scunthorpe ao bloquear correspondências parciais
@@ -223,6 +224,7 @@ pt-BR:
         email: E-mail
         expires_in: Expira em
         fields: Metadados do perfil
+        filter_action: Ação do filtro
         header: Capa
         honeypot: "%{label} (não preencher)"
         inbox_url: Link da caixa de entrada do repetidor
@@ -239,6 +241,7 @@ pt-BR:
         setting_always_send_emails: Sempre enviar notificações por e-mail
         setting_auto_play_gif: Reproduzir GIFs automaticamente
         setting_boost_modal: Controlar a visibilidade dos impulsos
+        setting_color_scheme: Esquema de cores
         setting_contrast: Contraste
         setting_default_language: Idioma dos toots
         setting_default_privacy: Visibilidade da publicação
@@ -386,6 +389,7 @@ pt-BR:
         name: Nome
         permissions_as_keys: Permissões
         position: Prioridade
+        require_2fa: Exigir autenticação de dois fatores
       username_block:
         allow_with_approval: Permitir inscrições com aprovação
         comparison: Método de comparação
