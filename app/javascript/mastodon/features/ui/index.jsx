@@ -538,6 +538,10 @@ class UI extends PureComponent {
     this.props.history.push('/home');
   };
 
+  handleHotkeyGoToExplore = () => {
+    this.props.history.push('/explore');
+  };
+
   handleHotkeyGoToNotifications = () => {
     this.props.history.push('/notifications');
   };
@@ -599,6 +603,7 @@ class UI extends PureComponent {
       moveToTop: this.handleMoveToTop,
       back: this.handleHotkeyBack,
       goToHome: this.handleHotkeyGoToHome,
+      goToExplore: this.handleHotkeyGoToExplore,
       goToNotifications: this.handleHotkeyGoToNotifications,
       goToLocal: this.handleHotkeyGoToLocal,
       goToFederated: this.handleHotkeyGoToFederated,
