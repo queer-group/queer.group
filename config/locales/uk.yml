@@ -335,6 +335,8 @@ uk:
       unpublish: Скасувати публікацію
       unpublished_msg: Оголошення успішно приховано!
       updated_msg: Оголошення успішно оновлено!
+    collections:
+      open: Відкрити
     critical_update_pending: Очікується критичне оновлення
     custom_emojis:
       assign_category: Призначити категорію
@@ -702,6 +704,7 @@ uk:
       resolved_msg: Скаргу успішно вирішено!
       skip_to_actions: Перейти до дій
       status: Стан
+      statuses: Дописи (%{count})
       statuses_description_html: Замінений вміст буде цитований у спілкуванні з обліковим записом, на який поскаржилися
       summary:
         action_preambles:
@@ -1284,6 +1287,10 @@ uk:
     hint_html: "<strong>Підказка:</strong> ми не будемо запитувати ваш пароль впродовж наступної години."
     invalid_password: Невірний пароль
     prompt: Підтвердіть пароль для продовження
+  color_scheme:
+    auto: Авто
+    dark: Темна
+    light: Світла
   crypto:
     errors:
       invalid_key: не є припустимим ключем Ed25519 або Curve25519
