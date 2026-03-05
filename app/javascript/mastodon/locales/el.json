@@ -276,6 +276,8 @@
   "callout.dismiss": "Παράβλεψη",
   "carousel.current": "<sr>Διαφάνεια</sr> {current, number} / {max, number}",
   "carousel.slide": "Διαφάνεια {current, number} από {max, number}",
+  "character_counter.recommended": "{currentLength}/{maxLength} προτεινόμενοι χαρακτήρες",
+  "character_counter.required": "{currentLength}/{maxLength} χαρακτήρες",
   "closed_registrations.other_server_instructions": "Καθώς το Mastodon είναι αποκεντρωμένο, μπορείς να δημιουργήσεις λογαριασμό σε άλλον διακομιστή αλλά να συνεχίσεις να αλληλεπιδράς με αυτόν.",
   "closed_registrations_modal.description": "Η δημιουργία λογαριασμού στον {domain} προς το παρόν δεν είναι δυνατή, αλλά λάβε υπόψη ότι δεν χρειάζεσαι λογαριασμό ειδικά στον {domain} για να χρησιμοποιήσεις το Mastodon.",
   "closed_registrations_modal.find_another_server": "Βρες άλλον διακομιστή",
