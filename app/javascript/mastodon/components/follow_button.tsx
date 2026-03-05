@@ -193,11 +193,7 @@ export const FollowButton: React.FC<{
   return (
     <Button
       onClick={handleClick}
-      disabled={
-        relationship?.blocked_by ||
-        (!(relationship?.following || relationship?.requested) &&
-          (account?.suspended || !!account?.moved))
-      }
+      disabled={disabled}
       secondary={following || relationship?.blocking}
       compact={compact}
       className={classNames(className, { 'button--destructive': following })}
