@@ -48,6 +48,7 @@
         label: Endre rolle
         no_role: Ingen rolle
         title: Endre rolle for %{username}
+      collections: Samlinger
       confirm: Bekreft
       confirmed: Bekreftet
       confirming: Bekrefte
@@ -295,6 +296,9 @@
       unpublish: Avpubliser
       unpublished_msg: Kunngjøring upublisert!
       updated_msg: Kunngjøringen er oppdatert!
+    collections:
+      accounts: Kontoer
+      collection_title: Samling av %{name}
     critical_update_pending: Kritisk oppdatering avventer
     custom_emojis:
       assign_category: Tilegn kategori
