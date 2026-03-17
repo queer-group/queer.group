@@ -71,7 +71,7 @@ class ActivityPub::ProcessAccountService < BaseService
     end
 
     @account
-  rescue Oj::ParseError
+  rescue JSON::ParserError
     nil
   end
 
