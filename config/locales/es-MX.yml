@@ -646,7 +646,7 @@ es-MX:
       title: Relaciones de %{acct}
     relays:
       add_new: Añadir nuevo relé
-      delete: Borrar
+      delete: Eliminar
       description_html: Un <strong>relés de federación</strong> es un servidor intermedio que intercambia grandes volúmenes de publicaciones públicas entre servidores que se suscriben y publican en él. <strong>Puede ayudar a servidores pequeños y medianos a descubrir contenido del fediverso</strong>, que de otra manera requeriría que los usuarios locales siguiesen manualmente a personas de servidores remotos.
       disable: Deshabilitar
       disabled: Deshabilitado
