@@ -16,6 +16,7 @@ class UserSettings
   setting :default_sensitive, default: false
   setting :default_privacy, default: nil, in: %w(public unlisted private)
   setting :default_quote_policy, default: 'public', in: %w(public followers nobody)
+  setting :email_subscriptions, default: false
 
   # Hometown-specific: Opt-out of RSS feeds for public posts
   setting :norss, default: false
