@@ -69,7 +69,7 @@ class Report < ApplicationRecord
     dislike: 3_000,
   }
 
-  before_validation :set_uri, only: :create
+  before_validation :set_uri, on: :create
 
   after_create_commit :trigger_create_webhooks
   after_update_commit :trigger_update_webhooks
