@@ -22,6 +22,7 @@ defaults: &defaults
   noindex: false
   norss: false
   theme: 'default'
+  thumbnail_description: ''
   trends: true
   trends_as_landing_page: false
   trendable_by_default: false
