@@ -1034,6 +1034,7 @@ en:
     site_uploads:
       delete: Delete uploaded file
       destroyed_msg: Site upload successfully deleted!
+    skip_to_content: Skip to content
     software_updates:
       critical_update: Critical — please update quickly
       description: It is recommended to keep your %{title} installation up to date to benefit from the latest fixes and features. Moreover, it is sometimes critical to update %{title} in a timely manner to avoid security issues. For these reasons, %{title} checks for updates every 30 minutes, and will notify you according to your email notification preferences.
