@@ -63,7 +63,7 @@ const mapStateToProps = state => ({
     && state.getIn(['statuses', state.getIn(['compose', 'quoted_status_id']), 'local_only']),
   isInReply: state.getIn(['compose', 'in_reply_to']) !== null,
   lang: state.getIn(['compose', 'language']),
-  maxChars: state.getIn(['server', 'server', 'configuration', 'statuses', 'max_characters'], 500),
+  maxChars: state.getIn(['server', 'server', 'item', 'configuration', 'statuses', 'max_characters'], 500),
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
