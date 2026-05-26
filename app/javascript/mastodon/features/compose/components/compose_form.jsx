@@ -256,7 +256,15 @@ class ComposeForm extends ImmutablePureComponent {
     const disabled = this.props.quoteOfLocalOnly || this.props.isEditing;
 
     return (
-      <form className='compose-form' onSubmit={this.handleSubmit}>
+      <form
+        className='compose-form'
+        role='region'
+        aria-label={intl.formatMessage({
+          id: 'tabs_bar.publish',
+          defaultMessage: 'New Post'
+        })}
+        onSubmit={this.handleSubmit}
+      >
         <ReplyIndicator />
         {!withoutNavigation && <NavigationBar />}
         <Warning />
