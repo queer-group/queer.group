@@ -1617,7 +1617,6 @@ body > [data-popper-placement] {
   font-size: 15px;
   line-height: 22px;
   height: 40px;
-  order: 2;
   flex: 0 0 auto;
   color: var(--color-text-secondary);
 }
@@ -1670,7 +1669,6 @@ body > [data-popper-placement] {
 
 .status__quote-cancel {
   align-self: self-start;
-  order: 5;
 }
 
 .status__info {
