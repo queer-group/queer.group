@@ -10,7 +10,7 @@ module InstanceHelper
   end
 
   def description_for_sign_up(invite = nil)
-    safe_join([description_prefix(invite), I18n.t('auth.description.suffix')], ' ')
+    safe_join([description_prefix(invite), I18n.t('auth.description.suffix', title: Setting.site_title)], ' ')
   end
 
   def instance_presenter
@@ -35,7 +35,7 @@ module InstanceHelper
     if invite.present?
       I18n.t('auth.description.prefix_invited_by_user', name: invite.user.account.username, title: Setting.site_title)
     else
-      I18n.t('auth.description.prefix_sign_up')
+      I18n.t('auth.description.prefix_sign_up', title: Setting.site_title)
     end
   end
 end
