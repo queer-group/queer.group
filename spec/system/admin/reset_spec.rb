@@ -32,7 +32,7 @@ RSpec.describe 'Admin::Reset' do
   end
 
   def submit_reset
-    click_on I18n.t('admin.accounts.reset_password')
+    click_on I18n.t('admin.accounts.reset_password', title: Setting.site_title)
   end
 
   def password_change_subject
