@@ -9847,6 +9847,10 @@ noscript {
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  &:empty {
+    display: none;
+  }
 }
 
 .notification-bar {
