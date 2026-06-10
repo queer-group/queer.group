@@ -94,7 +94,7 @@ const messages = defineMessages({
 
 export const ensureComposeIsVisible = (getState) => {
   if (!getState().getIn(['compose', 'mounted'])) {
-    browserHistory.push('/publish');
+    browserHistory.push('/publish', { focusTarget: false });
   }
 };
 
@@ -289,6 +289,16 @@ export function submitCompose(successCallback) {
         insertIfOnline('public');
         insertIfOnline(`account:${response.data.account.id}`);
       }
+
+      dispatch(showAlert({
+        message: statusId === null ? messages.published : messages.saved,
+        action: messages.open,
+        dismissAfter: 10000,
+        onClick: () => browserHistory.push(
+          `/@${response.data.account.username}/${response.data.id}`,
+          { focusTarget: 'detailed-status' }
+        ),
+      }));
     }).catch(function (error) {
       dispatch(submitComposeFail(error));
     });
