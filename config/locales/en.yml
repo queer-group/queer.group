@@ -16,30 +16,8 @@ en:
     contact: Contact
     contact_missing: Not set
     contact_unavailable: N/A
-    continue_to_web: Continue to web app
-    discover_users: Discover users
-    documentation: Documentation
-    federation_hint_html: With an account on %{instance} you'll be able to follow people on any Hometown or Mastodon server and beyond.
-    get_apps: Try a mobile app
+    default_thumbnail_description: Two smiling cartoon mastodons (who look like elephants) toss a paper plane between them. They're surrounded by a bright blue sky and floating planets with trees and more mastodons on them.
     hosted_on: '%{title} hosted on %{domain}'
-    instance_actor_flash: |
-      This account is a virtual actor used to represent the server itself and not any individual user.
-      It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
-    learn_more: Learn more
-    logged_in_as_html: You are currently logged in as %{username}.
-    logout_before_registering: You are already logged in.
-    privacy_policy: Privacy policy
-    rules: Server rules
-    rules_html: 'Below is a summary of rules you need to follow if you want to have an account on this server of %{title}:'
-    see_whats_happening: See what's happening
-    server_stats: 'Server stats:'
-    source_code: Source code
-    status_count_after:
-      one: post
-      other: posts
-    status_count_before: Who published
-    tagline: Follow friends and discover new ones
-    terms: Terms of service
     title: About
     unavailable_content: Moderated servers
     unavailable_content_description:
