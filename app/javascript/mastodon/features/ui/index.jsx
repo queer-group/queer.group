@@ -636,7 +636,7 @@ class UI extends PureComponent {
       cheat: this.handleDonate,
     };
 
-    const minimalShell = !this.props.identity.signedIn && landingPage === 'overview';
+    const minimalShell = !this.props.identity.signedIn && landingPage === 'overview' && location.pathname.startsWith('/overview');
 
     return (
       <Hotkeys global handlers={handlers}>
