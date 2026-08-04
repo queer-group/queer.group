@@ -21,12 +21,6 @@ export async function importEmojiData(localeString: string, path?: string) {
     path ??= await localeToPath(locale);
   }
 
-  // Fix from #37858. Check if we've loaded this path before.
-  const existing = await loadLatestEtag(locale);
-  if (existing === path) {
-    return null;
-  }
-
   const emojis = await fetchAndCheckEtag<CompactEmoji[]>(locale, path);
   if (!emojis) {
     return;
