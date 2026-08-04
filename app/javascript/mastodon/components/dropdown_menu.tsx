@@ -216,6 +216,7 @@ export const DropdownMenu = <Item = MenuItem,>({
           onClick={handleItemClick}
           data-index={i}
           aria-disabled={disabled}
+          type='button'
         >
           <DropdownMenuItemContent item={option} />
         </button>
