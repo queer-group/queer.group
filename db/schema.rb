@@ -118,6 +118,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
     t.datetime "created_at", null: false
     t.boolean "enabled", default: true, null: false
     t.boolean "keep_direct", default: true, null: false
+    t.boolean "keep_local", default: true, null: false
     t.boolean "keep_media", default: false, null: false
     t.boolean "keep_pinned", default: true, null: false
     t.boolean "keep_polls", default: false, null: false
@@ -127,7 +128,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
     t.integer "min_reblogs"
     t.integer "min_status_age", default: 1209600, null: false
     t.datetime "updated_at", null: false
-    t.boolean "keep_local", default: true, null: false
     t.index ["account_id"], name: "index_account_statuses_cleanup_policies_on_account_id"
   end
 
@@ -1215,18 +1215,18 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
 
   create_table "statuses", id: :bigint, default: -> { "timestamp_id('statuses'::text)" }, force: :cascade do |t|
     t.bigint "account_id", null: false
+    t.string "activity_pub_type"
     t.bigint "application_id"
     t.bigint "conversation_id"
     t.datetime "created_at", precision: nil, null: false
     t.datetime "deleted_at", precision: nil
-    t.boolean "local_only"
-    t.string "activity_pub_type"
     t.datetime "edited_at", precision: nil
     t.datetime "fetched_replies_at"
     t.bigint "in_reply_to_account_id"
     t.bigint "in_reply_to_id"
     t.string "language"
     t.boolean "local"
+    t.boolean "local_only"
     t.bigint "ordered_media_attachment_ids", array: true
     t.bigint "poll_id"
     t.integer "quote_approval_policy", default: 0, null: false
@@ -1628,9 +1628,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
   add_index "account_summaries", ["account_id"], name: "index_account_summaries_on_account_id", unique: true
 
   create_view "global_follow_recommendations", materialized: true, sql_definition: <<-SQL
-      SELECT account_id,
-      sum(rank) AS rank,
-      array_agg(reason) AS reason
+      SELECT t0.account_id,
+      sum(t0.rank) AS rank,
+      array_agg(t0.reason) AS reason
      FROM ( SELECT account_summaries.account_id,
               ((count(follows.id))::numeric / (1.0 + (count(follows.id))::numeric)) AS rank,
               'most_followed'::text AS reason
@@ -1654,8 +1654,8 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
                     WHERE (follow_recommendation_suppressions.account_id = statuses.account_id)))))
             GROUP BY account_summaries.account_id
            HAVING (sum((status_stats.reblogs_count + status_stats.favourites_count)) >= (5)::numeric)) t0
-    GROUP BY account_id
-    ORDER BY (sum(rank)) DESC;
+    GROUP BY t0.account_id
+    ORDER BY (sum(t0.rank)) DESC;
   SQL
   add_index "global_follow_recommendations", ["account_id"], name: "index_global_follow_recommendations_on_account_id", unique: true
 
@@ -1685,9 +1685,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
   add_index "instances", ["domain"], name: "index_instances_on_domain", unique: true
 
   create_view "user_ips", sql_definition: <<-SQL
-      SELECT user_id,
-      ip,
-      max(used_at) AS used_at
+      SELECT t0.user_id,
+      t0.ip,
+      max(t0.used_at) AS used_at
      FROM ( SELECT users.id AS user_id,
               users.sign_up_ip AS ip,
               users.created_at AS used_at
@@ -1704,6 +1704,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
               login_activities.created_at
              FROM login_activities
             WHERE (login_activities.success = true)) t0
-    GROUP BY user_id, ip;
+    GROUP BY t0.user_id, t0.ip;
   SQL
 end

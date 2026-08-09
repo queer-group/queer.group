@@ -5,13 +5,13 @@
 # Table name: statuses
 #
 #  id                           :bigint(8)        not null, primary key
+#  activity_pub_type            :string
 #  deleted_at                   :datetime
 #  edited_at                    :datetime
-#  local_only                   :boolean
-#  activity_pub_type            :string
 #  fetched_replies_at           :datetime
 #  language                     :string
 #  local                        :boolean
+#  local_only                   :boolean
 #  ordered_media_attachment_ids :bigint(8)        is an Array
 #  quote_approval_policy        :integer          default(0), not null
 #  reply                        :boolean          default(FALSE), not null

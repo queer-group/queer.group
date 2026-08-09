@@ -7,11 +7,11 @@
 #  id                 :bigint(8)        not null, primary key
 #  enabled            :boolean          default(TRUE), not null
 #  keep_direct        :boolean          default(TRUE), not null
+#  keep_local         :boolean          default(TRUE), not null
 #  keep_media         :boolean          default(FALSE), not null
 #  keep_pinned        :boolean          default(TRUE), not null
 #  keep_polls         :boolean          default(FALSE), not null
 #  keep_self_bookmark :boolean          default(TRUE), not null
-#  keep_local         :boolean          default(TRUE), not null
 #  keep_self_fav      :boolean          default(TRUE), not null
 #  min_favs           :integer
 #  min_reblogs        :integer
