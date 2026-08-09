@@ -1220,7 +1220,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_11_150940) do
     t.datetime "created_at", precision: nil, null: false
     t.datetime "deleted_at", precision: nil
     t.boolean "local_only"
-    t.bigint "poll_id"
     t.string "activity_pub_type"
     t.datetime "edited_at", precision: nil
     t.datetime "fetched_replies_at"
