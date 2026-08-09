@@ -475,7 +475,7 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         context 'when the known status is attributed to a different actor' do
-          let(:status) { Fabricate(:status, uri: object_json[:id], account: Fabricate(:account, domain: 'example.com')) }
+          let!(:status) { Fabricate(:status, uri: object_json[:id], account: Fabricate(:remote_account)) }
 
           it 'returns nil' do
             expect(subject.perform).to be_nil

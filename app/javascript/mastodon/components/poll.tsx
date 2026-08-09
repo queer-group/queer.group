@@ -36,7 +36,7 @@ const messages = defineMessages({
 });
 
 const isPollExpired = (expiresAt: Model.Poll['expires_at']) =>
-  new Date(expiresAt).getTime() < Date.now();
+  expiresAt !== null && new Date(expiresAt).getTime() < Date.now();
 
 interface PollProps {
   pollId: string;

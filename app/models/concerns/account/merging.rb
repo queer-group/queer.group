@@ -10,7 +10,7 @@ module Account::Merging
       Follow, FollowRequest, Block, Mute,
       AccountModerationNote, AccountPin, AccountStat, ListAccount,
       PollVote, Mention, AccountDeletionRequest, AccountNote, FollowRecommendationSuppression,
-      Appeal, TagFollow, Quote
+      Appeal, TagFollow, Quote, Collection, CollectionItem
     ],
     from_account_id: [
       Notification, NotificationPermission, NotificationRequest
