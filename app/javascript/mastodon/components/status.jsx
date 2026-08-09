@@ -576,6 +576,7 @@ class Status extends ImmutablePureComponent {
       }
     }
 
+    const statusActivityObjectType = status.get('activity_pub_type');
     const {statusContentProps, hashtagBar} = getHashtagBarForStatus(status);
 
     const header = this.props.headerRenderFn
