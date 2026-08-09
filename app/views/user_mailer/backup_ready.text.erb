@@ -2,6 +2,6 @@
 
 ===
 
-<%= t 'user_mailer.backup_ready.explanation' %>
+<%= t 'user_mailer.backup_ready.explanation', title: Setting.site_title %>
 
 => <%= download_backup_url(@backup) %>

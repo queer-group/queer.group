@@ -151,10 +151,10 @@ RSpec.describe AdminMailer do
         .to send_email(
           to: recipient.user_email,
           from: 'notifications@localhost',
-          subject: I18n.t('admin_mailer.new_software_updates.subject', instance: Rails.configuration.x.local_domain)
+          subject: I18n.t('admin_mailer.new_software_updates.subject', instance: Rails.configuration.x.local_domain, title: Setting.site_title)
         )
       expect(mail.body)
-        .to match('New Mastodon versions have been released, you may want to update!')
+        .to match(/New #{Setting.site_title} versions have been released, you may want to update!/)
     end
   end
 
@@ -171,7 +171,7 @@ RSpec.describe AdminMailer do
         .to send_email(
           to: recipient.user_email,
           from: 'notifications@localhost',
-          subject: I18n.t('admin_mailer.new_critical_software_updates.subject', instance: Rails.configuration.x.local_domain)
+          subject: I18n.t('admin_mailer.new_critical_software_updates.subject', instance: Rails.configuration.x.local_domain, title: Setting.site_title)
         )
       expect(mail.body)
         .to match("New critical versions of #{Setting.site_title} have been released, you may want to update as soon as possible!")
