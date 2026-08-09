@@ -60,7 +60,7 @@ RSpec.describe UserMailer do
       receiver.update!(locale: nil)
 
       expect(mail.text_part.body)
-        .and(have_body_text(I18n.t('devise.mailer.confirmation_instructions.title', title: Setting.site_title)))
+        .to match(I18n.t('devise.mailer.confirmation_instructions.title', title: Setting.site_title))
         .and match('spec')
         .and match(Rails.configuration.x.local_domain)
     end
@@ -78,18 +78,10 @@ RSpec.describe UserMailer do
     it 'renders reconfirmation instructions' do
       receiver.update!(email: 'new-email@example.com', locale: nil)
 
-<<<<<<< HEAD
-      expect(mail)
-        .to be_present
-        .and(have_body_text(I18n.t('devise.mailer.reconfirmation_instructions.title', title: Setting.site_title)))
-        .and(have_body_text('spec'))
-        .and(have_body_text(Rails.configuration.x.local_domain))
-=======
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.reconfirmation_instructions.title'))
+        .to match(I18n.t('devise.mailer.reconfirmation_instructions.title', title: Setting.site_title))
         .and match('spec')
         .and match(Rails.configuration.x.local_domain)
->>>>>>> 4e3866dbaf (Replace `email_spec` gem with built-in matchers (#38079))
     end
 
     it_behaves_like 'localized subject',
@@ -105,16 +97,9 @@ RSpec.describe UserMailer do
     it 'renders reset password instructions' do
       receiver.update!(locale: nil)
 
-<<<<<<< HEAD
-      expect(mail)
-        .to be_present
-        .and(have_body_text(I18n.t('devise.mailer.reset_password_instructions.title', title: Setting.site_title)))
-        .and(have_body_text('spec'))
-=======
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.reset_password_instructions.title'))
+        .to match(I18n.t('devise.mailer.reset_password_instructions.title', title: Setting.site_title))
         .and match('spec')
->>>>>>> 4e3866dbaf (Replace `email_spec` gem with built-in matchers (#38079))
     end
 
     it_behaves_like 'localized subject',
@@ -129,14 +114,8 @@ RSpec.describe UserMailer do
     it 'renders password change notification' do
       receiver.update!(locale: nil)
 
-<<<<<<< HEAD
-      expect(mail)
-        .to be_present
-        .and(have_body_text(I18n.t('devise.mailer.password_change.title', title: Setting.site_title)))
-=======
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.password_change.title'))
->>>>>>> 4e3866dbaf (Replace `email_spec` gem with built-in matchers (#38079))
+        .to match(I18n.t('devise.mailer.password_change.title', title: Setting.site_title))
     end
 
     it_behaves_like 'localized subject',
@@ -151,14 +130,8 @@ RSpec.describe UserMailer do
     it 'renders email change notification' do
       receiver.update!(locale: nil)
 
-<<<<<<< HEAD
-      expect(mail)
-        .to be_present
-        .and(have_body_text(I18n.t('devise.mailer.email_changed.title', title: Setting.site_title)))
-=======
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.email_changed.title'))
->>>>>>> 4e3866dbaf (Replace `email_spec` gem with built-in matchers (#38079))
+        .to match(I18n.t('devise.mailer.email_changed.title', title: Setting.site_title))
     end
 
     it_behaves_like 'localized subject',
@@ -345,17 +318,10 @@ RSpec.describe UserMailer do
     end
 
     it 'renders welcome mail' do
-<<<<<<< HEAD
-      expect(mail)
-        .to be_present
-        .and(have_subject(I18n.t('user_mailer.welcome.subject', title: Setting.site_title)))
-        .and(have_body_text(I18n.t('user_mailer.welcome.explanation')))
-=======
       expect { mail.deliver }
-        .to send_email(subject: I18n.t('user_mailer.welcome.subject'))
+        .to send_email(subject: I18n.t('user_mailer.welcome.subject', title: Setting.site_title))
       expect(mail.text_part.body)
         .to match(I18n.t('user_mailer.welcome.explanation'))
->>>>>>> 4e3866dbaf (Replace `email_spec` gem with built-in matchers (#38079))
     end
 
     it_behaves_like 'delivery to memorialized user'
@@ -366,17 +332,10 @@ RSpec.describe UserMailer do
     let(:mail) { described_class.backup_ready(receiver, backup) }
 
     it 'renders backup_ready mail' do
-<<<<<<< HEAD
-      expect(mail)
-        .to be_present
-        .and(have_subject(I18n.t('user_mailer.backup_ready.subject')))
-        .and(have_body_text(I18n.t('user_mailer.backup_ready.explanation', title: Setting.site_title)))
-=======
       expect { mail.deliver }
         .to send_email(subject: I18n.t('user_mailer.backup_ready.subject'))
       expect(mail.text_part.body)
-        .to match(I18n.t('user_mailer.backup_ready.explanation'))
->>>>>>> 4e3866dbaf (Replace `email_spec` gem with built-in matchers (#38079))
+        .to match(I18n.t('user_mailer.backup_ready.explanation', title: Setting.site_title))
     end
 
     it_behaves_like 'delivery to memorialized user'
