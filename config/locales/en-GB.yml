@@ -1,7 +1,7 @@
 ---
 en-GB:
   about:
-    about_mastodon_html: 'Hometown is adapted from Mastodon, a decentralized social network with no ads, no corporate surveillance, and ethical design.'
+    about_mastodon_html: 'The social network of the future: No ads, no corporate surveillance, ethical design, and decentralisation! Own your data with Mastodon!'
     contact_missing: Not set
     contact_unavailable: N/A
     default_thumbnail_description: Two smiling cartoon mastodons (who look like elephants) toss a paper plane between them. They're surrounded by a bright blue sky and floating planets with trees and more mastodons on them.
@@ -1376,7 +1376,6 @@ en-GB:
   deletes:
     challenge_not_passed: The information you entered was not correct
     confirm_password: Enter your current password to verify your identity
-    confirm_username: Enter your username to confirm the procedure
     proceed: Delete account
     success_msg: Your account was successfully deleted
     warning:
@@ -1936,7 +1935,6 @@ en-GB:
     appearance: Appearance
     authorized_apps: Authorised apps
     back: Back to Mastodon
-    delete: Account deletion
     development: Development
     edit_profile: Edit profile
     export: Export
